@@ -1,0 +1,98 @@
+.contact{
+	
+	padding:44px 0;
+	padding-bottom: 115px;
+	
+	&__Boxes{
+		position: relative;
+		float: left;
+		width: 100%;
+		transition:all 0.3s;
+
+
+		&:hover img{
+
+			transition:all 0.3s;
+			transform: scale(0.9);
+
+		};
+	}
+	
+
+
+	&__imgBox{
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		overflow: hidden;
+
+		img{
+			position: relative;
+			float: left;
+			width: 71px;
+			height: 71px;
+			object-fit: contain;
+			transition:all 0.3s;
+		}
+
+	}
+	
+	
+	&__textBox{
+
+
+		h4{
+			position: relative;
+			float: left;
+			width: 100%;
+			font-size: 25px;
+			color: #b11116;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+
+		h5{
+			position: relative;
+			float: left;
+			width: 100%;
+			font-size: 18px;
+			color: #b11116;
+			text-align: center;
+			margin-bottom: 25px;
+		}
+
+
+		span{
+			position: relative;
+			float: left;
+			width: 100%;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			line-height: 30px;
+			
+		}
+
+
+		a{
+			position: relative;
+			float: left;
+			width: 100%;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			line-height: 30px;
+
+		}
+
+
+	}
+
+
+	
+
+
+}

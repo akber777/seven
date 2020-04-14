@@ -1,0 +1,289 @@
+.services{
+	background-color:#000;
+	
+
+	&__topTitle{
+		padding-bottom: 50px;
+
+		h4{
+			position: relative;
+			float: left;
+			width: 100%;
+			font-size: 40px;
+			color: #000;
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+
+		span{
+			position: relative;
+			float: left;
+			width: 100%;
+			font-size: 40px;
+			color: #000;
+			text-align: center;
+		}
+
+
+		p{
+			position: relative;
+			float: left;
+			width: 100%;
+			font-size: 40px;
+			color: #000;
+			text-align: center;
+		}
+	}
+	
+	&__layout{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		
+		img{
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			opacity: 0;
+			z-index: -5;
+			transition: all 0.3s;
+		}
+
+	}
+
+
+	&__abText{
+		position: absolute;
+		transition: all 0.3s;
+		width: 50%;
+		opacity: 0;
+		z-index: -1;
+		top:50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50% , -50%);
+
+		p{	
+			position: relative;
+			float: left;
+			font-size: 27px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 0;
+			transition: all 0.3s;
+			max-height: 141px;
+			overflow: hidden;
+
+		}
+
+
+		span{	
+			position: relative;
+			float: left;
+			font-size: 27px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 0;
+			max-height: 141px;
+			overflow: hidden;
+		}
+
+
+	}
+
+	&__content{
+		background-color: #fff;
+		z-index: 15;
+		margin-top: -648px;
+		padding: 100px 180px;
+		transition: all 0.3s;
+		min-height: 1000px;
+	}
+	
+
+	&__boxes{
+		position: relative;
+		height: 406px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 25px;
+		border:1px solid #d9d9d9;
+		box-shadow: 1px 4px 29px 10px rgba(247, 247, 247, 0.78);
+		overflow: hidden;
+		
+
+
+
+		&:hover{
+
+			border:4px solid #b11116;
+			box-shadow: unset;
+
+		};
+
+
+		&:after{
+			position: absolute;
+			content: "";
+			width: 134%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			// left: -211px;
+			top: -211px;
+			z-index: 55;
+			transform: rotate(-47deg);
+			transition: all 0.3s;
+			left: -511px;
+
+		};
+
+
+		&:hover .services__abText
+		{
+			opacity: 1;
+			z-index: 60;
+		}
+
+
+		&:before{
+			position: absolute;
+			content: "";
+			width: 286%;
+			height: 100%;
+			// bottom: -69px;
+			transform: rotate(-47deg);
+			background-color: rgba(0, 0, 0, 0.3);
+			left: -280px;
+			z-index: 5;
+			bottom: -650px;
+			transition: all 0.3s;
+
+		};
+		
+
+
+		&:hover .services__layout img
+		{
+			transition: all 0.3s;
+			opacity: 1;
+			z-index: 5;
+		}
+
+
+		&:hover:before{
+			transition: all 0.3s;
+			bottom: -188px;
+		}
+
+
+		&:hover:after{
+			transition: all 0.3s;
+			left: -198px;
+		}
+
+
+
+
+
+		&--img{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 36px;
+		}
+
+
+		&--title{
+			
+			h5{
+				position: relative;
+				float: left;
+				width: 100%;
+				font-size: 27px;
+				color: #b11116;
+				text-align: center;
+				margin-bottom: 0;
+				max-height: 71px;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+			}
+
+			span{
+				position: relative;
+				float: left;
+				width: 100%;
+				font-size: 27px;
+				color: #b11116;
+				text-align: center;
+				margin-bottom: 0;
+				height: 95px;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+
+			}
+
+			p{
+				position: relative;
+				float: left;
+				width: 100%;
+				font-size: 27px;
+				color: #b11116;
+				text-align: center;
+				margin-bottom: 0;
+				height: 95px;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+			}
+
+			margin-bottom: 15px;
+		}
+
+
+		&--text{
+
+			p{
+				font-size: 16px;
+				color: #5f5f5f;
+				text-align: center;
+				line-height: 30px;
+				height: 116px;
+				overflow: hidden;
+				margin-bottom: 0;
+			}
+
+			span{
+				font-size: 16px;
+				color: #5f5f5f;
+				text-align: center;
+				line-height: 30px;
+				height: 116px;
+				overflow: hidden;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	
+	&__margin{
+		padding: 50px;
+	}
+
+
+}

@@ -1,0 +1,158 @@
+.header{
+
+	background-color: #000;
+	height: 144px;
+	display: flex;
+	align-items: center;
+	
+
+
+	&__logo{
+		position: absolute;
+		top:50%;
+		left: 50%;
+
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50% , -50%);
+
+	}
+
+	
+	&__nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+
+		&--ul{
+			position: relative;
+			float: left;
+			height: 100%;
+			margin-bottom: 0;
+
+
+			li{
+				position: relative;
+				float: left;
+				transition:all 0.3s;
+
+
+				&:not(:last-child)
+				{
+					margin-right: 27px;
+				}
+
+				a{
+					font-size: 20px;
+					color: #fff;
+					transition:all 0.3s;
+
+
+					&:hover{
+
+						transition:all 0.3s;
+						color:#6b0609;
+
+					}
+
+				}
+
+
+
+
+			}
+
+		}
+
+
+
+		&--ulRight{
+			margin-bottom: 0;
+			display: flex;
+			align-items: center;
+			transition:all 0.3s;
+
+			li{
+				position: relative;
+				float: left;
+				transition:all 0.3s;
+
+				a:hover{
+
+					transition:all 0.3s;
+					color:#b11116;
+
+				};
+
+
+				&:first-child:after{
+					position: absolute;
+					content: "/";
+					right: -18px;
+					color: #fff;
+					font-size: 21px;
+					top: 50%;
+					-webkit-transform: translateY(-50%);
+					-moz-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+					-o-transform: translateY(-50%);
+					transform: translateY(-50%);
+				}
+
+				&:not(:last-child)
+				{
+					margin-right: 27px;
+				}
+
+
+				a{
+					color:#fff;
+					font-size: 20px;
+					transition:all 0.3s;
+				}
+			}
+
+		}
+
+
+	}
+
+
+
+	&__lang{
+		position: relative;
+		float: left;
+		border:1px solid #fff;
+		padding:10px 15px;
+		
+
+		ul{
+			margin-bottom: 0;
+			
+			li:first-child:after{
+				position: absolute;
+				content: "";
+				right: -15px;
+				top: 0;
+				width: 1px;
+				height: 72%;
+				background-color: #fff;
+				top: 61%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}	
+
+
+		}
+
+	}
+
+
+
+}

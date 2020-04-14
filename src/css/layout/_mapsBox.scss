@@ -1,0 +1,177 @@
+.mapsBox{
+	
+
+	&__abolute{
+		position: absolute;
+		left:0;
+		top: 0;
+		width: 100%;
+		height: 100%; 
+	}
+
+	
+	&__left{
+		position: relative;
+		float: left;
+		height: 100%;
+		width: 50%;
+
+		img{
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+
+
+	
+
+	&__right{
+		position: relative;
+		float: left;
+		height: 100%;
+		width: 50%;
+		z-index: 5;
+
+		img{
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+
+	
+	&__relative{
+		height: 100%;
+		padding: 107px 0;
+
+
+		.col{
+			overflow: hidden;
+
+		}
+
+		
+		&--title{
+
+			h4{
+				position: relative;
+				float: left;
+				width: 100%;
+				font-size: 40px;
+				color: #fff;
+			}
+
+
+			p{
+				position: relative;
+				float: left;
+				width: 100%;
+				font-size: 20px;
+				color: #fff;
+			}
+
+		}
+		
+
+		&--left{
+			position: relative;
+			float: left;
+			width: 50%;
+			padding-right: 134px;
+
+		}
+
+
+
+		&--right{
+			
+			position: relative;
+			float: left;
+			width: 50%;
+
+		}
+
+
+	}
+
+	
+	&__form{
+		
+		overflow: hidden;
+
+		input{
+			height:40px;
+			padding: 20px;
+			border:none;
+			outline: 0 !important;
+			border-radius: 0;
+
+			&:focus ~ .mysvg{
+				stroke: #b11116 !important;
+				-webkit-transform: translate3d(-66.9%, 0, 0) !important;
+				transform: translate3d(-66.6%, 0, 0) !important;
+			};
+
+		}
+
+
+		textarea{
+			width: 100%;
+			resize: none;
+			height: 135px;
+			padding: 20px;
+			outline: 0 !important;
+			border-radius: 0;
+
+
+			&:focus ~ .mysvg{
+				stroke: #b11116 !important;
+				-webkit-transform: translate3d(-66.9%, 0, 0) !important;
+				transform: translate3d(-66.6%, 0, 0) !important;
+			};
+
+
+		}
+
+
+		button{
+			width: 100%;
+			padding:15px;
+			background-color: #000;
+			outline:0;
+			border:none;
+			color: #fff;
+			text-align: center;
+			font-size: 14px;
+			transition:all 0.3s;
+			border-radius: 0;
+
+			
+
+			&:hover{
+				
+				transition:all 0.3s;
+				background-color:#b11116;
+
+
+			};
+
+		}
+
+	}
+
+
+	&__layout{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+
+}
