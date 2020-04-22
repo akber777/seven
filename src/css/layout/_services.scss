@@ -1,41 +1,34 @@
-.Services{
-	
+.Services {
 	margin: 57px 0;
 	margin-bottom: 0;
-	
-	
-	&__endTitle{
+
+	&__endTitle {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding:30px 0;
+		padding: 30px 0;
 
-		button{
+		button {
 			position: relative;
 			float: left;
 			font-size: 20px;
 			color: #fff;
 			background-color: transparent;
-			border:none;
-			border-top:0px solid #fff;
-			border-bottom:0px solid #fff;
-			padding:10px 25px;
-			transition:all 0.3s;
+			border: none;
+			border-top: 0px solid #fff;
+			border-bottom: 0px solid #fff;
+			padding: 10px 25px;
+			transition: all 0.3s;
 			outline: 0 !important;
 
-
-			&:hover{
-				
-				transition:all 0.3s;
+			&:hover {
+				transition: all 0.3s;
 				color: #b11116;
 			}
 		}
-
-
 	}
 
-
-	&__Count{
+	&__Count {
 		position: absolute;
 		right: 35px;
 		top: 35px;
@@ -44,8 +37,7 @@
 		letter-spacing: 3px;
 	}
 
-
-	.owl-prev{
+	.owl-prev {
 		position: absolute !important;
 		width: 50px !important;
 		height: 50px !important;
@@ -57,13 +49,19 @@
 		background-size: content !important;
 		background-repeat: no-repeat !important;
 
-		span{
+		span {
 			display: none;
+		}
+
+		@include respondmax(xl) {
+			position: relative !important;
+			float: left !important;
+			margin-right: 15px !important;
+			right: unset !important;
 		}
 	}
 
-
-	.owl-next{
+	.owl-next {
 		position: absolute !important;
 		width: 50px !important;
 		height: 50px !important;
@@ -75,28 +73,38 @@
 		background-size: content !important;
 		background-repeat: no-repeat !important;
 
+		@include respondmax(xl) {
+			position: relative !important;
+			float: left !important;
+			margin-right: 15px !important;
+			right: unset !important;
+		}
 
-		span{
+		span {
 			display: none;
 		}
-		
 	}
-	
-	&__imageBox{
-		
-		height: 100%;
 
+	&__imageBox {
+		height: 679px;
 
-		img{
+		@include respondmax(lg) {
+			height: 384px;
+		}
+
+		img {
 			position: relative;
 			float: left;
 			width: 100%;
 			height: 100%;
-		}
 
+			@include respondmax(lg) {
+				object-fit: cover;
+			}
+		}
 	}
 
-	.owl-nav{
+	.owl-nav {
 		position: absolute;
 		width: 365px;
 		height: 200px;
@@ -106,51 +114,61 @@
 		-moz-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
-		transform: translate(-50% , -50%);
+		transform: translate(-50%, -50%);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
+		@include respondmax(lg) {
+			top: 40%;
+		}
+
+		@include respondmax(sm) {
+			width: 100%;
+			height: 68px;
+		}
 	}
 
-
-	&__textboxes{
-		position:relative;
+	&__textboxes {
+		position: relative;
 		float: left;
 		width: 609px;
 		height: 609px;
-		top:50%;
+		top: 50%;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		-moz-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
-		transform: translate(-50% , -50%);
+		transform: translate(-50%, -50%);
 		padding: 0 73px;
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	}
-	
 
-	&__textContainer{
+		@include respondmax(l1690) {
+			width: 100%;
+			padding-right: 30px;
+			padding-left: 95px;
+		}
+
+		@include respondmax(xl1261) {
+			padding-left: 95px;
+		}
+	}
+
+	&__textContainer {
 		height: 100%;
 		background-color: #fff;
 
-
-
-		&--texts{
-
-			&:not(:first-child)
-			{	
+		&--texts {
+			&:not(:first-child) {
 				margin-top: 38px;
-
 			}
 
-
-			&:after{
+			&:after {
 				position: absolute;
 				font-size: 50px;
 				content: attr(data-num);
@@ -163,35 +181,40 @@
 				transform: translateY(-50%);
 				color: #e6e6e6;
 
+				@include respondmax(l1690) {
+					font-size: 30px;
+					left: -48px;
+				}
+			}
 
-			};
-
-			h4{
+			h4 {
 				position: relative;
 				float: left;
 				width: 100%;
 				font-size: 25px;
-				color:#b11116;
+				color: #b11116;
 				margin-bottom: 11px;
 
+				@include respondmax(sm) {
+					font-size: 18px;
+				}
 			}
 
-
-			p{
+			p {
 				position: relative;
 				float: left;
 				width: 100%;
 				font-size: 16px;
-				color:#5f5f5f;
+				color: #5f5f5f;
 				height: 50px;
 				overflow: hidden;
 				margin-bottom: 0;
+
+				@include respondmax(sm) {
+					font-size: 14px;
+					height: 43px;
+				}
 			}
 		}
 	}
-
-
-
-
-
 }

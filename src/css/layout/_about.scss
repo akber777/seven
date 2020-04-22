@@ -1,37 +1,41 @@
-.About{
-	
+.About {
 	background-color: #000;
 
-	
-	&__title{
-
+	&__title {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-top: 65px;
-		
 
-		&--lineLeft{
+		&--lineLeft {
 			position: absolute;
 			width: calc(55% - 255px);
 			left: 0;
 			height: 1px;
 			background-color: #4d4d4d;
 			z-index: 1;
+
+			@include respondmax(lg) {
+				display: none;
+			}
+
+
 		}
 
-
-		&--lineRight{
+		&--lineRight {
 			position: absolute;
 			width: calc(55% - 255px);
 			right: 0;
 			height: 1px;
 			background-color: #4d4d4d;
 			z-index: 1;
+
+			@include respondmax(lg) {
+				display: none;
+			}
 		}
 
-
-		&--box{
+		&--box {
 			position: relative;
 			float: left;
 			width: 27px;
@@ -42,8 +46,7 @@
 			z-index: 5;
 		}
 
-
-		&--in{
+		&--in {
 			position: relative;
 			float: left;
 			background-color: #000;
@@ -53,27 +56,40 @@
 			justify-content: center;
 			align-items: center;
 
-			h4{
+			h4 {
 				position: relative;
 				float: left;
 				font-size: 40px;
 				color: #fff;
 
+				@include respondmax(lg) {
+					font-size: 25px;
+				}
+
+				@include respondmax(sm)
+				{
+					font-size: 18px;
+				}
 			}
-
 		}
-
 	}
 
-
-	
-	&__textContainer{
-
+	&__textContainer {
 		padding: 0 110px;
 		padding-top: 35px;
 		padding-bottom: 35px;
-		
-		p{
+
+		@include respondmax(lg) {
+			padding: 35px 35px;
+		}
+
+
+		@include respondmax(md)
+		{
+			padding:35px 10px;
+		}
+
+		p {
 			position: relative;
 			float: left;
 			width: 100%;
@@ -81,12 +97,6 @@
 			color: #fff;
 			text-align: center;
 			line-height: 30px;
-		}	
-
-
+		}
 	}
-
-
-
-
 }

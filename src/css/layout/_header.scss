@@ -1,94 +1,110 @@
-.header{
-
+.header {
 	background-color: #000;
 	height: 144px;
 	display: flex;
 	align-items: center;
-	
 
+	@include respondmax(sm) {
+		height: 95px;
+	}
 
-	&__logo{
+	&__logo {
 		position: absolute;
-		top:50%;
+		top: 50%;
 		left: 50%;
 
 		-webkit-transform: translate(-50%, -50%);
 		-moz-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
-		transform: translate(-50% , -50%);
+		transform: translate(-50%, -50%);
 
+		@include respondmax(xl1261) {
+			width: 156px;
+		}
+
+		@include respondmax(lg) {
+			position: relative;
+			float: left;
+			top: 0;
+			left: 0;
+			transform: unset;
+		}
+
+		@include respondmax(sm) {
+			width: 90px;
+		}
+
+		img {
+			position: relative;
+			float: left;
+			width: 100%;
+		}
 	}
 
-	
-	&__nav{
+	&__nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
 
-		&--ul{
+		@include respondmax(lg) {
+			justify-content: space-between;
+		}
+
+		&--ul {
 			position: relative;
 			float: left;
 			height: 100%;
 			margin-bottom: 0;
 
+			@include respondmax(lg) {
+				display: none;
+			}
 
-			li{
+			li {
 				position: relative;
 				float: left;
-				transition:all 0.3s;
+				transition: all 0.3s;
 
-
-				&:not(:last-child)
-				{
+				&:not(:last-child) {
 					margin-right: 27px;
 				}
 
-				a{
+				a {
 					font-size: 20px;
 					color: #fff;
-					transition:all 0.3s;
+					transition: all 0.3s;
 
-
-					&:hover{
-
-						transition:all 0.3s;
-						color:#6b0609;
-
+					@include respondmax(xl1261) {
+						font-size: 16px;
 					}
 
+					&:hover {
+						transition: all 0.3s;
+						color: #6b0609;
+					}
 				}
-
-
-
-
 			}
-
 		}
 
-
-
-		&--ulRight{
+		&--ulRight {
 			margin-bottom: 0;
 			display: flex;
 			align-items: center;
-			transition:all 0.3s;
+			transition: all 0.3s;
 
-			li{
+			li {
 				position: relative;
 				float: left;
-				transition:all 0.3s;
+				transition: all 0.3s;
 
-				a:hover{
+				a:hover {
+					transition: all 0.3s;
+					color: #b11116;
+				}
 
-					transition:all 0.3s;
-					color:#b11116;
-
-				};
-
-
-				&:first-child:after{
+				&:first-child:after {
 					position: absolute;
 					content: "/";
 					right: -18px;
@@ -102,37 +118,41 @@
 					transform: translateY(-50%);
 				}
 
-				&:not(:last-child)
-				{
+				&:not(:last-child) {
 					margin-right: 27px;
 				}
 
-
-				a{
-					color:#fff;
+				a {
+					color: #fff;
 					font-size: 20px;
-					transition:all 0.3s;
+					transition: all 0.3s;
+
+					@include respondmax(xl1261) {
+						font-size: 16px;
+					}
+
+					@include respondmax(sm) {
+						font-size: 13px;
+					}
 				}
 			}
-
 		}
-
-
 	}
 
-
-
-	&__lang{
+	&__lang {
 		position: relative;
 		float: left;
-		border:1px solid #fff;
-		padding:10px 15px;
-		
+		border: 1px solid #fff;
+		padding: 10px 15px;
 
-		ul{
+		@include respondmax(sm) {
+			padding: 6px 10px;
+		}
+
+		ul {
 			margin-bottom: 0;
-			
-			li:first-child:after{
+
+			li:first-child:after {
 				position: absolute;
 				content: "";
 				right: -15px;
@@ -146,13 +166,7 @@
 				-ms-transform: translateY(-50%);
 				-o-transform: translateY(-50%);
 				transform: translateY(-50%);
-			}	
-
-
+			}
 		}
-
 	}
-
-
-
 }

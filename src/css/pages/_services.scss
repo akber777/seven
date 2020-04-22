@@ -1,11 +1,14 @@
-.services{
-	background-color:#000;
-	
+.services {
+	background-color: #000;
 
-	&__topTitle{
+	&__topTitle {
 		padding-bottom: 50px;
 
-		h4{
+		@include respondmax(xl1328) {
+			padding-bottom: 0;
+		}
+
+		h4 {
 			position: relative;
 			float: left;
 			width: 100%;
@@ -15,8 +18,7 @@
 			margin-bottom: 0;
 		}
 
-
-		span{
+		span {
 			position: relative;
 			float: left;
 			width: 100%;
@@ -25,8 +27,7 @@
 			text-align: center;
 		}
 
-
-		p{
+		p {
 			position: relative;
 			float: left;
 			width: 100%;
@@ -35,42 +36,44 @@
 			text-align: center;
 		}
 	}
-	
-	&__layout{
+
+	&__layout {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		z-index: 1;
-		
-		img{
+		transition: all 0.3s;
+
+		img {
 			position: relative;
 			float: left;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			opacity: 0;
+			opacity: 0.2;
 			z-index: -5;
 			transition: all 0.3s;
 		}
-
 	}
 
-
-	&__abText{
+	&__abText {
 		position: absolute;
 		transition: all 0.3s;
 		width: 50%;
 		opacity: 0;
 		z-index: -1;
-		top:50%;
+		top: 50%;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		-moz-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
-		transform: translate(-50% , -50%);
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: start;
 
-		p{	
+		p {
 			position: relative;
 			float: left;
 			font-size: 27px;
@@ -81,10 +84,14 @@
 			max-height: 141px;
 			overflow: hidden;
 
+
+			@include respondmax(md)
+			{
+				font-size: 18px;
+			}
 		}
 
-
-		span{	
+		span {
 			position: relative;
 			float: left;
 			font-size: 27px;
@@ -94,21 +101,36 @@
 			max-height: 141px;
 			overflow: hidden;
 		}
-
-
 	}
 
-	&__content{
+	&__content {
 		background-color: #fff;
 		z-index: 15;
 		margin-top: -648px;
 		padding: 100px 180px;
 		transition: all 0.3s;
 		min-height: 1000px;
-	}
-	
 
-	&__boxes{
+		@include respondmax(l1690) {
+			padding: 100px 52px;
+		}
+
+		@include respondmax(xl1328) {
+			margin-top: -448px;
+			padding: 20px 52px;
+		}
+
+		@include respondmax(md) {
+			margin-top: -248px;
+		}
+
+		@include respondmax(sm) {
+			margin-top: -156px;
+			padding: 20px 18px;
+		}
+	}
+
+	&__boxes {
 		position: relative;
 		height: 406px;
 		display: flex;
@@ -116,94 +138,93 @@
 		align-items: center;
 		flex-direction: column;
 		padding: 25px;
-		border:1px solid #d9d9d9;
+		border: 1px solid #d9d9d9;
 		box-shadow: 1px 4px 29px 10px rgba(247, 247, 247, 0.78);
 		overflow: hidden;
-		
 
+		@include respondmax(xl1328) {
+			height: 332px;
+		}
 
+		@include respondmax(xl) {
+			height: unset;
+		}
 
-		&:hover{
-
-			border:4px solid #b11116;
+		&:hover {
+			border: 4px solid #b11116;
 			box-shadow: unset;
+		}
 
-		};
-
-
-		&:after{
+		&:after {
 			position: absolute;
 			content: "";
-			width: 134%;
+			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.5);
-			// left: -211px;
-			top: -211px;
+			top: 0px;
 			z-index: 55;
-			transform: rotate(-47deg);
+			-moz-transform: rotate(-47deg);
+			-ms-transform: rotate(-47deg);
+			-o-transform: rotate(-47deg);
+			transform: rotate(0deg);
 			transition: all 0.3s;
-			left: -511px;
+			left: 0;
+			opacity: 0;
+		}
 
-		};
-
-
-		&:hover .services__abText
-		{
+		&:hover .services__abText {
 			opacity: 1;
 			z-index: 60;
 		}
 
+		// &:before {
+		// 	position: absolute;
+		// 	content: "";
+		// 	width: 286%;
+		// 	height: 100%;
+		// 	// bottom: -69px;
+		// 	transform: rotate(-47deg);
+		// 	background-color: rgba(0, 0, 0, 0.3);
+		// 	left: -280px;
+		// 	z-index: 5;
+		// 	bottom: -650px;
+		// 	transition: all 0.3s;
+		// 	display: none;
+		// }
 
-		&:before{
-			position: absolute;
-			content: "";
-			width: 286%;
-			height: 100%;
-			// bottom: -69px;
-			transform: rotate(-47deg);
-			background-color: rgba(0, 0, 0, 0.3);
-			left: -280px;
-			z-index: 5;
-			bottom: -650px;
-			transition: all 0.3s;
-
-		};
-		
-
-
-		&:hover .services__layout img
-		{
+		&:hover .services__layout img {
 			transition: all 0.3s;
 			opacity: 1;
 			z-index: 5;
 		}
 
+		// &:hover:before {
+		// 	transition: all 0.3s;
+		// 	bottom: -188px;
+		// }
 
-		&:hover:before{
+		&:hover:after {
 			transition: all 0.3s;
-			bottom: -188px;
+			opacity: 1;
 		}
 
-
-		&:hover:after{
-			transition: all 0.3s;
-			left: -198px;
-		}
-
-
-
-
-
-		&--img{
+		&--img {
 			display: flex;
 			justify-content: center;
 			margin-bottom: 36px;
+			@include respondmax(sm450) {
+				height: 50px;
+			}
+
+			img {
+				@include respondmax(sm450) {
+					object-fit: contain;
+				}
+			}
 		}
 
-
-		&--title{
-			
-			h5{
+		&--title {
+			h5 {
 				position: relative;
 				float: left;
 				width: 100%;
@@ -216,10 +237,9 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-
 			}
 
-			span{
+			span {
 				position: relative;
 				float: left;
 				width: 100%;
@@ -232,11 +252,9 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-
-
 			}
 
-			p{
+			p {
 				position: relative;
 				float: left;
 				width: 100%;
@@ -249,16 +267,21 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-
 			}
 
 			margin-bottom: 15px;
 		}
 
+		&--text {
+			height: 116px;
+			overflow: hidden;
 
-		&--text{
+			@include respondmax(xl) {
+				height: unset;
+				overflow: unset;
+			}
 
-			p{
+			p {
 				font-size: 16px;
 				color: #5f5f5f;
 				text-align: center;
@@ -266,9 +289,14 @@
 				height: 116px;
 				overflow: hidden;
 				margin-bottom: 0;
+
+				@include respondmax(xl) {
+					height: unset;
+					overflow: unset;
+				}
 			}
 
-			span{
+			span {
 				font-size: 16px;
 				color: #5f5f5f;
 				text-align: center;
@@ -280,10 +308,15 @@
 		}
 	}
 
-	
-	&__margin{
+	&__margin {
 		padding: 50px;
+
+		@include respondmax(xl1328) {
+			padding: 40px;
+		}
+
+		@include respondmax(sm) {
+			padding: 10px;
+		}
 	}
-
-
 }

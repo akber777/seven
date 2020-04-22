@@ -26,7 +26,7 @@
 				<ul>
 					<li>
 						<a href="#" title="">
-							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
 						</a>
 					</li>
 					<li>
@@ -44,11 +44,6 @@
 							<i class="fab fa-linkedin-in"></i>
 						</a>
 					</li>
-					<li>
-						<a href="#" title="">
-							<i class="fab fa-google-plus-g"></i>
-						</a>
-					</li>
 				</ul>
 			</div>
 			<div class="agency__middle--search">
@@ -58,88 +53,7 @@
 		</div>
 	</div>
 </section>
-<section class="range full rangesBox">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-2">
-				<div class="range__select">
-					<span class="full">
-						BOAT TYPE
-					</span>
-					<select name="">
-						<option value="">SEMI RIGID</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-lg-7">
-				<div class="range__boxes">
-					<div class="range__boxes--text full">
-						<div class="range__length">
-							<span>LENGHT</span>
-						</div>
-						<div class="range__count">
-							<span class="rangeVal"><i class="class_val">15</i></span>
-							<span>-</span>
-							<span>100m+</span>
-						</div>
-						<div class="range__self full">
-							<input type="text" class="js-range-slider" name="my_range" value="" />
-						</div>
-					</div>
-				</div>
-				<div class="range__boxes">
-					<div class="range__boxes--text full">
-						<div class="range__length">
-							<span>PRICE</span>
-						</div>
-						<div class="range__count">
-							<span class="rangeVal">€<i class="class_val">500</i></span>
-							<span>-</span>
-							<span>€1m+</span>
-						</div>
-						<div class="range__self full">
-							<input type="text" class="js-range-money" name="my_range" value="" />
-						</div>
-					</div>
-				</div>
-				<div class="range__boxes">
-					<div class="range__boxes--text full">
-						<div class="range__length">
-							<span>GUESTS</span>
-						</div>
-						<div class="range__count">
-							<span class="rangeVal"><i class="class_val">3</i></span>
-							<span>-</span>
-							<span>40 PERSONS</span>
-						</div>
-						<div class="range__self full">
-							<input type="text" class="js-range-person" name="my_range" value="" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="range__selectEnd">
-					<span class="full">
-						PRODUCTION YEAR
-					</span>
-					<select name="">
-						<option value="">UP TO 2 YEARS</option>
-					</select>
-				</div>
-				<div class="range__selectEnd">
-					<span class="full">
-						BUILDER
-					</span>
-					<select name="">
-						<option value="">GOCREATIVE</option>
-					</select>
-				</div>
-			</div>
-		</div>
-	</div>
-	<button class="range__searchBtn" type="button">SEARCH</button>
-</section>
+//= template/resultSearch.html
 <section class="results full">
 	<div class="boat__title full">
 		<h4>SEARCH RESULTS</h4>
@@ -315,6 +229,30 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="search__pagination full">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">«</span>
+								<span aria-hidden="true" class="leftP">First</span>
+								<span class="sr-only">Next</span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">«</span></a></li>
+						<li class="page-item"><a class="page-link active" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">»</span></a></li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true" class="rightP">Last</span>
+								<span aria-hidden="true">»</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</div>

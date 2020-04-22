@@ -1,59 +1,69 @@
-.results{
-
+.results {
 	margin-top: -408px;
 	background: #fff;
 	z-index: 54;
 	padding-top: 25px;
 
+	@include respondmax(xl1328) {
+		margin-top: -191px;
+	}
 
-	&__container{
+	@include respondmax(lg) {
+		margin-top: 0;
+	}
+
+	&__container {
 		height: 500px;
 		overflow: hidden;
 		margin-bottom: 80px;
-		padding:5px;
-		-webkit-box-shadow: 1px 4px 29px 10px rgba(247,247,247,.78);
-		-moz-box-shadow: 1px 4px 29px 10px rgba(247,247,247,.78);
-		box-shadow: 1px 4px 29px 10px rgba(247,247,247,.78);
+		padding: 5px;
+		-webkit-box-shadow: 1px 4px 29px 10px rgba(247, 247, 247, 0.78);
+		-moz-box-shadow: 1px 4px 29px 10px rgba(247, 247, 247, 0.78);
+		box-shadow: 1px 4px 29px 10px rgba(247, 247, 247, 0.78);
 
-		&--height{
+		@include respondmax(lg) {
+			height: unset;
+			padding-bottom: 15px;
+		}
+
+		&--height {
 			height: 100%;
 		}
 	}
 
-
-	&__contents
-	{
+	&__contents {
 		height: 100%;
 		overflow: hidden;
-
 	}
 
-
-	&__btn
-	{	
+	&__btn {
 		padding-left: 54px;
 
-		a{
+		a {
 			position: relative;
 			float: left;
 			margin-top: 17px;
 			font-size: 16px;
-			color:#b11116;
+			color: #b11116;
 			transition: all 0.3s;
 
-
-			&:hover{
-
+			&:hover {
 				transition: all 0.3s;
 				font-size: 18px;
 				font-weight: 600;
+			}
+		}
 
-			};
+		@include respondmax(lg) {
+			padding-left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0 15px;
 		}
 	}
-	
-	&__infos{
-		
+
+	&__infos {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
@@ -62,19 +72,32 @@
 		height: 30px;
 		font-size: 16px;
 		overflow: hidden;
-		
-		span{
-			position:relative;
-			float: left;
 
+		@include respondmax(xl1328) {
+			height: unset;
 		}
 
-		span:not(:last-child){
+		@include respondmax(lg) {
+			padding-left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0 15px;
+		}
+
+		span {
+			position: relative;
+			float: left;
+
+			@include respondmax(sm) {
+				font-size: 14px;
+			}
+		}
+
+		span:not(:last-child) {
 			margin-right: 25px;
 
-
-			&:after
-			{
+			&:after {
 				position: absolute;
 				content: "";
 				right: -12px;
@@ -89,16 +112,26 @@
 				background-color: #555;
 			}
 		}
-
-
 	}
 
-	&__text{
+	&__text {
 		height: 122px;
 		overflow: hidden;
 		padding-left: 50px;
 
-		h4{
+		@include respondmax(xl1328) {
+			height: 88px;
+		}
+
+		@include respondmax(lg) {
+			padding-left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0 15px;
+		}
+
+		h4 {
 			position: relative;
 			float: left;
 			width: 100%;
@@ -107,70 +140,91 @@
 			height: 100%;
 			display: flex;
 			align-items: center;
+
+			@include respondmax(lg) {
+				padding-left: 0;
+				justify-content: center;
+			}
+
+			@include respondmax(sm) {
+				font-size: 25px;
+			}
 		}
 	}
-	
-	
-	&__boxes{
+
+	&__boxes {
 		margin-bottom: 54px;
 
-
-		&--top{
-
+		&--top {
 		}
 	}
 
-
-	&__rightImg{
+	&__rightImg {
 		position: relative;
 		float: left;
 		width: 50%;
-		padding:0 4px;
+		padding: 0 4px;
 		overflow: hidden;
 
-		&:hover img{
+		&:hover img {
 			transition: all 0.3s;
 			transform: scale(1.1);
 		}
 
-		img{
+		img {
 			transition: all 0.3s;
 			position: relative;
 			float: left;
 			width: 100%;
 			max-height: 100%;
-			height: auto;
+			height: 100%;
 		}
 	}
-	
 
-	&__left{
+	&__left {
 		position: relative;
 		float: left;
 		width: 100%;
 		max-height: 100%;
 		height: auto;
 		transition: all 0.3s;
+		height: 100%;
 
+		@include respondmax(l1450) {
+			object-fit: cover;
+		}
 
-		&:hover{
+		&:hover {
 			transition: all 0.3s;
 			transform: scale(1.1);
 		}
 	}
-
-
-
-
 }
 
-
-.rangesBox{
+.rangesBox {
 	position: absolute;
 	top: 92px;
 	z-index: 55;
 	background: #fff;
-	-webkit-box-shadow: 0px 0px 27px 7px rgba(0,0,0,0.53);
-	-moz-box-shadow: 0px 0px 27px 7px rgba(0,0,0,0.53);
-	box-shadow: 0px 0px 27px 7px rgba(0,0,0,0.53);
+	-webkit-box-shadow: 0px 0px 27px 7px rgba(0, 0, 0, 0.53);
+	-moz-box-shadow: 0px 0px 27px 7px rgba(0, 0, 0, 0.53);
+	box-shadow: 0px 0px 27px 7px rgba(0, 0, 0, 0.53);
+}
+
+.marginRangesResults {
+	@include respondmax(xl1328) {
+		position: relative;
+		float: left;
+		width: 100%;
+		top: 0;
+		margin-top: -440px;
+	}
+
+	@include respondmax(md) {
+		margin-top: -240px;
+	}
+
+	@include respondmax(sm) {
+		margin-top: -164px;
+	}
 }
