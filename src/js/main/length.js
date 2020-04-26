@@ -21,69 +21,69 @@ $(document).ready(function () {
 
 	// <------------------------> //
 
-	$('.js-range-slider-mile').hide();
+	// $('.js-range-slider-mile').hide();
 
-	$('.mileSpan').click(function () {
+	// $('.mileSpan').click(function () {
 
-		$(".js-irs-0").hide();
+	// 	$(".js-irs-0").hide();
 
-		$('.js-irs-3').show();
+	// 	$('.js-irs-3').show();
 
-		$('.kmI').text('f');
+	// 	$('.kmI').text('f');
 
-		$(".js-range-slider-mile").ionRangeSlider({
-			type: "double",
-			min: 0,
-			max: 330,
-			from: 0,
-			to: 330,
+	// 	$(".js-range-slider-mile").ionRangeSlider({
+	// 		type: "double",
+	// 		min: 0,
+	// 		max: 330,
+	// 		from: 0,
+	// 		to: 330,
 
-			onStart: function (data) {
-				$('.class_val').eq(0).text(data.from);
-				$('.length_val').eq(0).text(data.to);
-			},
-			onChange: function (data) {
-				$('.class_val').eq(0).text(data.from);
+	// 		onStart: function (data) {
+	// 			$('.class_val').eq(0).text(data.from);
+	// 			$('.length_val').eq(0).text(data.to);
+	// 		},
+	// 		onChange: function (data) {
+	// 			$('.class_val').eq(0).text(data.from);
 
-				$('.length_val').eq(0).text(data.to);
+	// 			$('.length_val').eq(0).text(data.to);
 
-			}
-		});
+	// 		}
+	// 	});
 
-	})
+	// })
 
-	// return length
+	// // return length
 
-	$('.lengthSpan').click(function () {
+	// $('.lengthSpan').click(function () {
 
-		$(".js-irs-0").show();
+	// 	$(".js-irs-0").show();
 
-		$('.js-irs-3').hide();
+	// 	$('.js-irs-3').hide();
 
-		$('.kmI').text('m');
+	// 	$('.kmI').text('m');
 
-		$(".js-range-slider").ionRangeSlider({
-			type: "double",
-			min: 0,
-			max: 100,
-			from: 0,
-			to: 100,
-			onStart: function (data) {
-				$('.class_val').eq(0).text(data.from);
-				$('.length_val').eq(0).text(data.to);
+	// 	$(".js-range-slider").ionRangeSlider({
+	// 		type: "double",
+	// 		min: 0,
+	// 		max: 100,
+	// 		from: 0,
+	// 		to: 100,
+	// 		onStart: function (data) {
+	// 			$('.class_val').eq(0).text(data.from);
+	// 			$('.length_val').eq(0).text(data.to);
 				
-			},
-			onChange: function (data) {
-				$('.class_val').eq(0).text(data.from);
+	// 		},
+	// 		onChange: function (data) {
+	// 			$('.class_val').eq(0).text(data.from);
 
-				$('.length_val').eq(0).text(data.to);
+	// 			$('.length_val').eq(0).text(data.to);
 
-			}
-		});
+	// 		}
+	// 	});
 
 
 
-	})
+	// })
 
 
 

@@ -264,7 +264,7 @@
     height: 100%;
 
     .ymaps-2-1-76-map {
-        position: relative !important;
+        position: absolute !important;
         float: left !important;
         height: 100% !important;
         width: 100% !important;
@@ -511,4 +511,33 @@ header {
         width: 60px;
         height: 60px;
     }
+}
+
+
+
+.irs .to > i:first-child{
+    margin-left: 0 !important;
+} 
+
+
+.mynavButton{
+    margin-right: 0 !important;
+}
+
+
+.header__nav--ulRight li:nth-child(3)
+{
+    margin-right: 0 !important;
+
+    @include respondmax(lg)
+    {
+        margin-right:27px !important;
+    }
+
+
+    @include respondmax(md)
+    {
+        margin-right:0px !important;
+    }
+
 }
