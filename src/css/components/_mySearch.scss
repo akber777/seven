@@ -11,19 +11,18 @@
 	&__content {
 		position: absolute;
 		width: 50%;
-		top: 250px;
+		top: 50%;
 		left: 50%;
-		-webkit-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		-o-transform: translateX(-50%);
-		transform: translateX(-50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 
 		@include respondmax(xl) {
 			width: 100%;
 			padding: 0 36px;
 		}
-
 	}
 
 	&__title {
@@ -67,9 +66,7 @@
 				font-size: 25px;
 				color: #000;
 
-
-				@include respondmax(md)
-				{
+				@include respondmax(md) {
 					font-size: 18px;
 				}
 			}
@@ -136,4 +133,9 @@
 
 .marginMyForms .nice-select:after {
 	margin-top: -8px;
+}
+
+
+.myForms {
+	z-index: 5555;
 }

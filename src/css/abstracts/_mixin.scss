@@ -92,6 +92,11 @@
 	@if $breakpoint == l1690 {
 		@media (max-width: 1690px) {@content};
 	}
+
+
+	@if $breakpoint == l2500 {
+		@media (max-width: 2500px) {@content};
+	}
 }
 
 

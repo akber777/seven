@@ -1,8 +1,5 @@
-.button{
-	
-
-	&__close{
-
+.button {
+	&__close {
 		position: relative;
 		float: left;
 		width: 100%;
@@ -13,8 +10,7 @@
 		overflow: hidden;
 		outline: 0 !important;
 
-
-		&:after{
+		&:after {
 			position: absolute;
 			content: "";
 			left: 17px;
@@ -24,33 +20,19 @@
 			background-color: #fff;
 			transform: rotate(45deg);
 			transition: all 0.3s;
+		}
 
-			
-
-
-		};
-
-
-
-		&:hover:after{
-			
+		&:hover:after {
 			transition: all 0.3s;
 			transform: rotate(406deg);
+		}
 
-		};
-
-
-		&:hover:before{
-			
+		&:hover:before {
 			transition: all 0.3s;
 			transform: rotate(-406deg);
+		}
 
-
-		};
-
-
-
-		&:before{
+		&:before {
 			position: absolute;
 			content: "";
 			right: 19px;
@@ -60,10 +42,130 @@
 			background-color: #fff;
 			transform: rotate(-45deg);
 			transition: all 0.3s;
+		}
+	}
+}
 
-		};
+.prevButton {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 35px;
+	background-color: #000;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 16;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.3s;
 
+	&:hover {
+		transition: all 0.3s;
+		background-color: #b11116;
+	}
+}
 
-	}	
+.nextButton {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 35px;
+	background-color: #000;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 16;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.3s;
 
+	&:hover {
+		transition: all 0.3s;
+		background-color: #b11116;
+	}
+}
+
+.closeFlag {
+	position: absolute;
+	right: 10px;
+	width: 15px;
+	top: -2px;
+	display: flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background: transparent;
+	font-size: 20px;
+}
+
+.iti-mobile .iti--container {
+	@include respondmax(sm) {
+		width: 300px !important;
+	}
+}
+
+.blog__slider .owl-carousel .owl-dots {
+	position: absolute;
+	bottom: -39px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog__slider .owl-carousel .owl-dots button {
+	position: relative;
+	float: left;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	margin-right: 12px;
+	outline: 0 !important;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.blog__slider .owl-carousel .active {
+	background: #b11116 !important;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.mySlider {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000;
+
+	.item {
+		@extend .mySlider;
+
+		img {
+			@extend .mySlider;
+		}
+	}
 }

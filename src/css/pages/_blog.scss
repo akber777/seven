@@ -75,20 +75,19 @@
 	}
 
 	&__imageBox {
-		height: 417px;
 		overflow: hidden;
 		transition: all 0.3s;
 
 		@include respondmax(md) {
-			height: 217px;
+			height: auto;
 		}
 
 		img {
 			position: relative;
 			float: left;
 			width: 100%;
-			height: 100%;
 			transition: all 0.3s;
+			object-fit: cover;
 		}
 	}
 

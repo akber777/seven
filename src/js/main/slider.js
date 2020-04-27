@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$('.boat__slider .owl-carousel').owlCarousel({
 		loop: true,
 		margin: 0,
-		nav: false,
+		nav: true,
 		dots: true,
 		responsive: {
 			0: {
@@ -21,23 +21,23 @@ $(document).ready(function () {
 
 
 
-	$('.agency__slider .owl-carousel').owlCarousel({
-		loop: true,
-		margin: 0,
-		nav: false,
-		dots: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 1
-			},
-			1000: {
-				items: 1
-			}
-		}
-	})
+	// $('.agency__slider .owl-carousel').owlCarousel({
+	// 	loop: true,
+	// 	margin: 0,
+	// 	nav: true,
+	// 	dots: true,
+	// 	responsive: {
+	// 		0: {
+	// 			items: 1
+	// 		},
+	// 		600: {
+	// 			items: 1
+	// 		},
+	// 		1000: {
+	// 			items: 1
+	// 		}
+	// 	}
+	// })
 
 
 
@@ -125,7 +125,7 @@ $(document).ready(function () {
 			},
 			1217: {
 				items: 3
-			}	
+			}
 		}
 	})
 
@@ -152,6 +152,203 @@ $(document).ready(function () {
 	})
 
 
+	//	SLIDER START
+
+	let index = 0;
+
+	$('.mySlider .item').stop().fadeOut(10);
+
+	$('.mySlider .item').eq(0).stop().fadeIn();
+
+	const mySliderLength = $('.mySlider .item').length;
+
+
+	$('.nextButton').click(function () {
+
+		index++
+
+		if (index > (mySliderLength - 1)) {
+			index = 0;
+			$('.mySlider .item').stop().fadeOut(10);
+			$('.mySlider .item').stop().eq(index).fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).addClass('active');
+			// console.log(index)
+
+
+		}
+
+		if (index <= mySliderLength) {
+
+			$('.mySlider .item').stop().fadeOut(10);
+			$('.mySlider .item').eq(index).stop().fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).addClass('active');
+			console.log(index)
+		}
+
+
+	})
+
+
+
+
+
+
+	// next slider
+
+	function playSlider() {
+
+		index++
+
+		if (index > (mySliderLength - 1)) {
+			index = 0;
+			$('.mySlider .item').stop().fadeOut(10);
+			$('.mySlider .item').stop().eq(index).fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).addClass('active');
+
+			// console.log(index)
+
+
+		}
+
+		if (index <= mySliderLength) {
+
+			$('.mySlider .item').stop().fadeOut(10);
+			$('.mySlider .item').eq(index).stop().fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).addClass('active');
+		}
+
+		console.log(index)
+		$('.mySlider .owl-dots button').click(function () {
+
+			let indexSet = $(this).index();
+
+			index=indexSet
+
+			$('.mySlider .item').stop().fadeOut();
+			$('.mySlider .item').eq(index).stop().fadeIn();
+
+
+		})
+
+
+
+	}
+
+
+	setInterval(playSlider, 4000);
+
+	// play automic slider
+
+
+	$('.prevButton').click(function () {
+
+		index--
+
+		if (index > (mySliderLength - 1)) {
+			index = 0;
+			$('.mySlider .item').stop().fadeOut(10);
+			$('.mySlider .item').stop().eq(index).fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).addClass('active');
+		}
+
+		if (index < (mySliderLength - 1)) {
+
+
+			if (index < 0) {
+				index = mySliderLength - 1;
+			}
+
+			$('.mySlider .item').stop().fadeOut(10);
+			$('.mySlider .item').eq(index).stop().fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).addClass('active');
+		}
+
+
+	})
+
+	// prev slider
+
+
+	// slider change with  button
+
+
+	let sliderBtn = $('.mySlider .owl-dots button').length;
+
+	$('.mySlider .owl-dots button').removeClass('active');
+
+	$('.mySlider .owl-dots button').eq(0).addClass('active');
+
+	$('.mySlider .owl-dots button').click(function () {
+
+		let index = $(this).index();
+
+		$('.mySlider .owl-dots button').removeClass('active');
+		$(this).addClass('active');
+
+		$('.mySlider .item').stop().fadeOut();
+		$('.mySlider .item').eq(index).stop().fadeIn();
+
+
+	})
+
+
 
 
 })
+
+//	SLIDER END
+
+
+let myClosebtn = document.createElement('button');
+
+myClosebtn.setAttribute('class', 'closeFlag');
+
+myClosebtn.textContent = 'x'
+
+$('.iti__country-list').append(myClosebtn);
+
+
+console.log($('.form'));
+
+// $(document).scroll(function () {
+
+// 	$('.form').css('background-position', '0px ' + $(document).scrollTop() + 'px');
+
+// });
+
+
+
+
+
+// textare value clear
+
+let count = 0;
+
+$('textarea').keydown(function (event) {
+
+	count++
+
+	if (count <= 1) {
+		$(this).text('');
+		console.log('ok')
+	}
+
+
+})
+
+
+
+
+
+
+
+
+
+
+

@@ -5,13 +5,13 @@ $(document).ready(function(){
 
     function init() {
         var myMap = new ymaps.Map("map", {
-            center: [42.442574,19.268646],
-            zoom: 8,
+            center: [42.436688,18.5958266],
+            zoom: 10,
             controls:[]
         }, {
             searchControlProvider: 'yandex#search'
         }),
-        myPlacemark1 = new ymaps.Placemark([42.285610,18.836531], {
+        myPlacemark1 = new ymaps.Placemark([42.436688,18.59582661], {
             balloonContent: 'Large icon'
         }, {
             iconLayout: 'default#image',

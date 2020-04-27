@@ -10,6 +10,7 @@
 	@include respondmax(lg)
 	{
 		height: 200px;
+		background-attachment: unset;
 	}
 
 	&__left {

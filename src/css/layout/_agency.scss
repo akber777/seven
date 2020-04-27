@@ -94,75 +94,74 @@
 			z-index: 2;
 		}
 
-		.owl-carousel {
+		.active {
+			background: #b11116 !important;
+			transition: all 0.3s;
+		}
+
+		.owl-item {
 			height: 100%;
+		}
 
-			.active {
-				background: #b11116 !important;
-				transition: all 0.3s;
+		.owl-stage {
+			height: 100%;
+		}
+
+		.owl-dots {
+			position: absolute;
+			bottom: 56px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* right: 0; */
+			/* padding-right: 57px; */
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
+			transform: translateX(-50%);
+			z-index: 555;
+			
+
+			@include respondmax(sm) {
+				bottom: 25px;
 			}
 
-			.owl-stage-outer {
-				height: 100%;
-			}
-
-			.owl-item {
-				height: 100%;
-			}
-
-			.owl-stage {
-				height: 100%;
-			}
-
-			.owl-dots {
-				position: absolute;
-				bottom: 56px;
-				/* right: 0; */
-				/* padding-right: 57px; */
-				left: 50%;
-				-webkit-transform: translateX(-50%);
-				-moz-transform: translateX(-50%);
-				-ms-transform: translateX(-50%);
-				-o-transform: translateX(-50%);
-				transform: translateX(-50%);
-
-				@include respondmax(sm) {
-					bottom: 25px;
-				}
-
-				button {
-					position: relative;
-					float: left;
-					width: 10px;
-					height: 10px;
-					background-color: #fff;
-					margin-right: 12px;
-					outline: 0 !important;
-					transition: all 0.3s;
-
-					&:hover {
-						background: #b11116 !important;
-						transition: all 0.3s;
-					}
-
-					// &:focus{
-					// 	background: #b11116 !important;
-					// 	transition: all 0.3s;
-					// }
-				}
-			}
-
-			.item {
+			button {
 				position: relative;
 				float: left;
-				width: 100%;
-				height: 100%;
+				width: 10px;
+				height: 10px;
+				background-color: #fff;
+				margin-right: 12px;
+				outline: 0 !important;
+				transition: all 0.3s;
+				border:none;
 
-				img {
-					max-width: 100%;
-					height: 100%;
-					object-fit: cover;
+				&:hover {
+					background: #b11116 !important;
+					transition: all 0.3s;
 				}
+
+				// &:focus{
+				// 	background: #b11116 !important;
+				// 	transition: all 0.3s;
+				// }
+			}
+		}
+
+		.item {
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 100%;
+
+			img {
+				max-width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
 		}
 	}

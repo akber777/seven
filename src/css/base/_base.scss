@@ -1,12 +1,12 @@
-*{
+* {
 	box-sizing: border-box;
 	outline: 0;
 	list-style: none;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	text-decoration: none !important;
 }
-html{ 
+html {
 	scroll-behavior: smooth;
 	width: 100%;
 	height: 100%;
@@ -27,96 +27,107 @@ html{
 	@include respondmin(xl){
 		font-size: 62.5% ; //1rem=12px
 	}		 */
-
 }
 
-body{
+body {
 	position: relative;
 	float: left;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: 'Roboto' !important;
+	font-family: "Roboto" !important;
 }
 
-
-main{
+main {
 	position: relative;
 	float: left;
 	width: 100%;
 }
 
-
-.full{
+.full {
 	position: relative;
 	float: left;
 	width: 100%;
 }
 
-
-
-
-@media (max-width: 722px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
+@media (max-width: 722px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
 		max-width: 100%;
 	}
-
 }
 
-
-@media (max-width: 745px){
-	.container_header{
+@media (max-width: 745px) {
+	.container_header {
 		max-width: 100%;
 		padding: 0;
 	}
-
 }
 
+@media (max-width: 1245px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
+		max-width: 100%;
+	}
+}
 
-@media (min-width: 1300px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
+@media (min-width: 1300px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
 		max-width: 1260px;
 	}
-
 }
 
-
-
-@media (min-width: 1458px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
+@media (min-width: 1458px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
 		max-width: 1400px;
 	}
-
 }
 
-@media (min-width: 1500px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
+@media (min-width: 1500px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
 		max-width: 1460px;
 	}
-
 }
 
-
-@media (min-width: 1700px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
+@media (min-width: 1700px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
 		max-width: 1640px;
 	}
-
 }
 
-
-@media (min-width: 1920px){
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
+@media (min-width: 1920px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
 		max-width: 1685px;
 	}
-
 }
 
-
-
-
-
-.whatsap_div{
-	position:fixed !important;
+.whatsap_div {
+	position: fixed !important;
 	bottom: 67px;
 	right: 54px;
 	width: 80px;
@@ -125,39 +136,31 @@ main{
 	z-index: 100;
 }
 
-
-
-
-.whatsap_div img{
+.whatsap_div img {
 	animation-name: callanimation;
-	animation-duration: 1.5s; 
-	animation-timing-function: ease-out; 
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
 	animation-delay: 0s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-fill-mode: none;
-	animation-play-state: running; 
+	animation-play-state: running;
 }
 
-@keyframes callanimation{
-
-	from{
-		transform:scale(0.8);
+@keyframes callanimation {
+	from {
+		transform: scale(0.8);
 	}
 
-	to{
-		transform:scale(1);
+	to {
+		transform: scale(1);
 	}
-
-
 }
 
-
-
-.blogImg{
+.blogImg {
 	height: 100%;
 
-	img{
+	img {
 		position: relative;
 		float: left;
 		width: 100%;
