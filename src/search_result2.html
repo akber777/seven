@@ -1,4 +1,244 @@
-//= template/head.html
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href='libs/owl.carousel/dist/assets/owl.carousel.min.css'>
+    <link rel="stylesheet" href="libs/Font-Awesome/css/all.min.css">
+    <link rel="stylesheet" href="libs/ion-rangeslider/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="libs/intl-tel-input/build/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="libs/jquery-nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="css/main/main.min.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <div class="loadingGif">
+        <div class="loading">
+            <h1>Loading</h1><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span></span></span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <!-- my loading don't touch -->
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <nav class="full header__nav">
+            <ul class="header__nav--ul">
+                <li><a href="#about" title="">ABOUT US</a></li>
+                <li><a href="#services" title="">SERVICES</a></li>
+                <li><a href="#blog" title="">BLOG</a></li>
+                <li><a href="#contacts" title="">CONTACTS</a></li>
+                <li>
+                    <div class="header__lang">
+                        <ul class="full">
+                            <li>
+                                <a class="acvtiveLi" href="#" title="">En</a>
+                            </li>
+                            <li><a href="#" title="">Ru</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="header__logo">
+                <a href="#" title="">
+                    <img src="img/logo_header.png" alt="">
+                </a>
+            </div>
+            <ul class="header__nav--ulRight">
+                <li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
+                <li class="myItems"><a href="#" title="">CHARTER</a></li>
+                <li class="myLang">
+                    <div class="header__lang">
+                        <ul class="full">
+                            <li>
+                                <a class="acvtiveLi" href="#" title="">En</a>
+                            </li>
+                            <li><a href="#" title="">Ru</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mynavButton">
+                    <button onclick="openNav()" type="button" class="full">
+                        <img src="img/newmenu.png" alt="">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="myForms marginMyForms">
+        <div class="boat__forms--in myForms__in full">
+            <div class="mySearch__close">
+                <button type="button" class="button__close">
+
+                </button>
+            </div>
+            <div class="mySearch__title full">
+                <h4>Contact form</h4>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-lg-6 mb-5">
+                        <input type="text" class="form-control" placeholder="First name / Last name">
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <select name="" id="mySelect">
+                            <option value="">Mr</option>
+                            <option value="">Miss</option>
+                            <option value="">Mrs</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <input type="tel" id="phone" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="col-12 mb-5">
+                        <textarea placeholder="Your message" name=""></textarea>
+                    </div>
+                </div>
+                <div class="full">
+                    <button type="submit" class="boat__formsBtn">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- conatact form -->
+
+    <div class="mySearch">
+        <div class="mySearch__content">
+            <div class="mySearch__close">
+                <button type="button" class="button__close">
+
+                </button>
+            </div>
+            <div class="mySearch__title full">
+                <h4>Search</h4>
+            </div>
+            <div class="mySearch__form full">
+                <input placeholder="What are you looking for ?" type="search" id="inputPassword5" class="form-control">
+                <div class="mySearch__btn">
+                    <button type="button">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="full header fixedHEader">
+        <div class="container">
+            <nav class="full header__nav">
+                <ul class="header__nav--ul">
+                    <li><a href="#about" title="">ABOUT US</a></li>
+                    <li><a href="#services" title="">SERVICES</a></li>
+                    <li><a href="#blog" title="">BLOG</a></li>
+                    <li><a href="#contacts" title="">CONTACTS</a></li>
+                </ul>
+                <div class="header__logo">
+                    <a href="#" title="">
+                        <img src="img/logo_header.png" alt="">
+                    </a>
+                </div>
+                <ul class="header__nav--ulRight">
+                    <li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
+                    <li class="myItems"><a href="#" title="">CHARTER</a></li>
+                    <li>
+                        <div class="header__lang">
+                            <ul class="full">
+                                <li>
+                                    <a class="acvtiveLi" href="#" title="">En</a>
+                                </li>
+                                <li><a href="#" title="">Ru</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mynavButton">
+                        <button onclick="openNav()" type="button" class="full">
+                            <img src="img/newmenu.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+    <header class="full header staticHeader">
+        <div class="container">
+            <nav class="full header__nav">
+                <ul class="header__nav--ul">
+                    <li><a href="#about" title="">ABOUT US</a></li>
+                    <li><a href="#services" title="">SERVICES</a></li>
+                    <li><a href="#blog" title="">BLOG</a></li>
+                    <li><a href="#contacts" title="">CONTACTS</a></li>
+                </ul>
+                <div class="header__logo">
+                    <a href="#" title="">
+                        <img src="img/logo_header.png" alt="">
+                    </a>
+                </div>
+                <ul class="header__nav--ulRight">
+                    <li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
+                    <li class="myItems"><a href="#" title="">CHARTER</a></li>
+                    <li>
+                        <div class="header__lang">
+                            <ul class="full">
+                                <li>
+                                    <a class="acvtiveLi" href="#" title="">En</a>
+                                </li>
+                                <li><a href="#" title="">Ru</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mynavButton">
+                        <button onclick="openNav()" type="button" class="full">
+                            <img src="img/newmenu.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="whatsap_div">
+        <a href="#" title="">
+            <img class="full" src="img/whatsap.png" alt="">
+        </a>
+    </div>
+
+    <!-- /header -->
+    <main>
 
 <div class="whatsap_div">
 	<a href="#" title="">
@@ -53,7 +293,98 @@
 		</div>
 	</div>
 </section>
-//= template/resultSearch.html
+<section class="range full rangesBox marginRangesResults">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-2">
+				<div class="range__select">
+					<span class="full">
+						BOAT TYPE
+					</span>
+					<select name="" class="yearSelect">
+						<option value="">SEMI RIGID</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-xl-7">
+				<div class="range__boxes">
+					<div class="range__boxes--text full">
+						<div class="range__length">
+							<span class="lengthSpan">LENGHT</span>
+							<!-- <span class="mileSpan">FEET</span> -->
+						</div>
+						<div class="range__count">
+							<span class="rangeVal"><i class="class_val">15</i></span>
+							<span>-</span>
+							<span><i class="length_val" style="padding-right:0px;margin-right:-3px;"></i>
+								<i class="kmI">m</i>
+							</span>
+						</div>
+						<div class="range__self full">
+							<input type="text" class="js-range-slider" name="my_range" value="" />
+						</div>
+					</div>
+				</div>
+				<div class="range__boxes">
+					<div class="range__boxes--text full">
+						<div class="range__length">
+							<span>PRICE</span>
+						</div>
+						<div class="range__count">
+							<span class="rangeVal"><i class="class_val">500</i>K</span>
+							<span>-</span>
+							<span class="lengthMoney"><i style="padding-right:0px;margin-right:-3px;"
+									class="length_val"></i>
+								<i class="milion_i">m</i>
+							</span>
+						</div>
+						<div class="range__self full">
+							<input type="text" class="js-range-money" name="my_range" value="" />
+						</div>
+					</div>
+				</div>
+				<div class="range__boxes">
+					<div class="range__boxes--text full">
+						<div class="range__length">
+							<span>GUESTS</span>
+						</div>
+						<div class="range__count">
+							<span class="rangeVal"><i class="class_val">3</i></span>
+							<span>-</span>
+							<span><i class="length_val"></i>PERSONS</span>
+						</div>
+						<div class="range__self full">
+							<input type="text" class="js-range-person" name="my_range" value="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3">
+				<div class="range__selectEnd">
+					<span class="full">
+						BY YEAR
+					</span>
+					<select class="yearSelect" name="">
+						<option value="">Any</option>
+						<option value="">New Build</option>
+						<option value="">UP TO 2 YEARS</option>
+						<option value="">UP TO 5 YEARS</option>
+						<option value="">Over 10 YEARS</option>
+					</select>
+				</div>
+				<div class="range__selectEnd">
+					<span class="full">
+						BUILDER
+					</span>
+					<select name="" class="yearSelect">
+						<option value="">GOCREATIVE</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="range__searchBtn" type="button">SEARCH</button>
+</section>
 <section class="results full">
 	<div class="boat__title full">
 		<h4>SEARCH RESULTS</h4>
@@ -257,4 +588,67 @@
 		</div>
 	</div>
 </section>
-//= template/footer.html
+</main>
+<footer class="footer full">
+  <div class="full footer__contain">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="full footer__text">
+            <span>Copyright 2020 © 7 Oceans Yachting</span>
+            <div class="footer__privacy">
+              <div class="agency__middle--icon">
+                <ul>
+                  <li>
+                    <a href="#" title="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      <i class="fas fa-play"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="libs/Font-Awesome/js/all.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript">
+</script>
+<script src="libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="libs/intl-tel-input/build/js/intlTelInput-jquery.min.js"></script>
+<script src="libs/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="js/all.min.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

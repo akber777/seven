@@ -154,6 +154,13 @@ $(document).ready(function () {
 
 	//	SLIDER START
 
+
+	const myLength = $('.mySlider .item').length;
+
+	for (let i = 0; i < myLength; i++) {
+		$('.mySlider .owl-dots').append('<button></button>')
+	}
+
 	let index = 0;
 
 	$('.mySlider .item').stop().fadeOut(10);
@@ -183,7 +190,7 @@ $(document).ready(function () {
 			$('.mySlider .item').stop().fadeOut(10);
 			$('.mySlider .item').eq(index).stop().fadeIn();
 			$('.mySlider .owl-dots button').removeClass('active');
-			$('.mySlider .owl-dots button').eq(index).addClass('active');
+			$('.mySlider .owl-dots button').eq(index).stop().addClass('active');
 			console.log(index)
 		}
 
@@ -197,6 +204,42 @@ $(document).ready(function () {
 
 	// next slider
 
+
+
+	$('.prevButton').click(function () {
+
+		index--
+
+		if (index > (mySliderLength - 1)) {
+			index = 0;
+			$('.mySlider .item').stop().fadeOut();
+			$('.mySlider .item').eq(index).stop().fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).stop().addClass('active');
+		}
+
+		if (index < (mySliderLength - 1)) {
+
+
+			if (index < 0) {
+				index = mySliderLength - 1;
+			}
+
+			$('.mySlider .item').stop().fadeOut();
+			$('.mySlider .item').eq(index).stop().fadeIn();
+			$('.mySlider .owl-dots button').removeClass('active');
+			$('.mySlider .owl-dots button').eq(index).stop().addClass('active');
+		}
+
+
+	})
+
+	// prev slider
+
+
+
+	// play automic slider
+
 	function playSlider() {
 
 		index++
@@ -206,7 +249,7 @@ $(document).ready(function () {
 			$('.mySlider .item').stop().fadeOut(10);
 			$('.mySlider .item').stop().eq(index).fadeIn();
 			$('.mySlider .owl-dots button').removeClass('active');
-			$('.mySlider .owl-dots button').eq(index).addClass('active');
+			$('.mySlider .owl-dots button').eq(index).stop().addClass('active');
 
 			// console.log(index)
 
@@ -218,19 +261,14 @@ $(document).ready(function () {
 			$('.mySlider .item').stop().fadeOut(10);
 			$('.mySlider .item').eq(index).stop().fadeIn();
 			$('.mySlider .owl-dots button').removeClass('active');
-			$('.mySlider .owl-dots button').eq(index).addClass('active');
+			$('.mySlider .owl-dots button').eq(index).stop().addClass('active');
 		}
 
-		console.log(index)
 		$('.mySlider .owl-dots button').click(function () {
 
 			let indexSet = $(this).index();
 
-			index=indexSet
-
-			$('.mySlider .item').stop().fadeOut();
-			$('.mySlider .item').eq(index).stop().fadeIn();
-
+			index = indexSet
 
 		})
 
@@ -241,38 +279,7 @@ $(document).ready(function () {
 
 	setInterval(playSlider, 4000);
 
-	// play automic slider
 
-
-	$('.prevButton').click(function () {
-
-		index--
-
-		if (index > (mySliderLength - 1)) {
-			index = 0;
-			$('.mySlider .item').stop().fadeOut(10);
-			$('.mySlider .item').stop().eq(index).fadeIn();
-			$('.mySlider .owl-dots button').removeClass('active');
-			$('.mySlider .owl-dots button').eq(index).addClass('active');
-		}
-
-		if (index < (mySliderLength - 1)) {
-
-
-			if (index < 0) {
-				index = mySliderLength - 1;
-			}
-
-			$('.mySlider .item').stop().fadeOut(10);
-			$('.mySlider .item').eq(index).stop().fadeIn();
-			$('.mySlider .owl-dots button').removeClass('active');
-			$('.mySlider .owl-dots button').eq(index).addClass('active');
-		}
-
-
-	})
-
-	// prev slider
 
 
 	// slider change with  button
@@ -282,7 +289,7 @@ $(document).ready(function () {
 
 	$('.mySlider .owl-dots button').removeClass('active');
 
-	$('.mySlider .owl-dots button').eq(0).addClass('active');
+	$('.mySlider .owl-dots button').eq(0).stop().addClass('active');
 
 	$('.mySlider .owl-dots button').click(function () {
 
@@ -295,7 +302,12 @@ $(document).ready(function () {
 		$('.mySlider .item').eq(index).stop().fadeIn();
 
 
+
+
 	})
+
+
+	//create Slider Btn
 
 
 
@@ -305,16 +317,16 @@ $(document).ready(function () {
 //	SLIDER END
 
 
-let myClosebtn = document.createElement('button');
+// let myClosebtn = document.createElement('button');
 
-myClosebtn.setAttribute('class', 'closeFlag');
+// myClosebtn.setAttribute('class', 'closeFlag');
 
-myClosebtn.textContent = 'x'
+// myClosebtn.textContent = 'x'
 
-$('.iti__country-list').append(myClosebtn);
+// $('.iti__country-list').append(myClosebtn);
 
 
-console.log($('.form'));
+// console.log($('.form'));
 
 // $(document).scroll(function () {
 

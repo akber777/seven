@@ -443,7 +443,7 @@
 				}
 
 				span {
-					font-size: 25px;
+					font-size: 17px;
 					color: #000;
 					display: flex;
 					align-self: center;
@@ -457,7 +457,7 @@
 			input {
 				height: 70px;
 				color: #000;
-				font-size: 25px;
+				font-size: 17px;
 				padding: 0 20px;
 				border: none !important;
 				background-color: #f2f2f2;
@@ -474,7 +474,7 @@
 				width: 100%;
 				height: 70px;
 				color: #000;
-				font-size: 25px;
+				font-size: 17px;
 				padding: 0 30px;
 				border: none !important;
 				background-color: #f2f2f2;
@@ -492,7 +492,7 @@
 				width: 100%;
 				height: 138px;
 				color: #000;
-				font-size: 25px;
+				font-size: 17px;
 				padding: 25px 20px;
 				border: none !important;
 				background-color: #f2f2f2;
@@ -608,6 +608,10 @@
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 
+	@include respondmax(md) {
+		display: none;
+	}
+
 	.owl-prev {
 		position: absolute;
 		width: 40px;
@@ -641,7 +645,6 @@
 			-o-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
 			transition: all 0.3s;
-
 		}
 
 		&:hover {
@@ -666,7 +669,6 @@
 		&:hover {
 			background-color: #b11116 !important;
 			transition: all 0.3s;
-
 		}
 
 		span {
@@ -690,4 +692,14 @@
 			transform: translate(-50%, -50%);
 		}
 	}
+}
+
+.overflowNone {
+	overflow: unset !important;
+}
+
+.iti-mobile .iti__country-list {
+	max-height: 72%;
+	width: 100%;
+	top: 134px;
 }

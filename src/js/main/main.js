@@ -67,14 +67,19 @@ $('.button__close').click(function () {
 
 
 $("#phone").intlTelInput({
-	utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js"
+
 });
 
 
 $("#phoneRegister").intlTelInput({
-	utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js"
+
 });
 
+
+
+$('#phoneFooter').intlTelInput({
+
+});
 
 $('.agency__mouse').remove();
 
@@ -96,6 +101,7 @@ $('.yearSelect').niceSelect();
 
 function openNav() {
 	document.getElementById("mySidenav").style.width = "250px";
+	document.getElementById("mySidenav").style.right = "0"
 }
 
 function closeNav() {

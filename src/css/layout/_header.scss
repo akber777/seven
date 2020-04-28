@@ -1,6 +1,6 @@
 .header {
 	background-color: #000;
-	height: 144px;
+	height: 115px;
 	display: flex;
 	align-items: center;
 
@@ -10,6 +10,7 @@
 
 	&__logo {
 		position: absolute;
+		width: 150px;
 		top: 50%;
 		left: 50%;
 
@@ -72,7 +73,7 @@
 				}
 
 				a {
-					font-size: 20px;
+					font-size: 18px;
 					color: #fff;
 					transition: all 0.3s;
 
@@ -124,7 +125,7 @@
 
 				a {
 					color: #fff;
-					font-size: 20px;
+					font-size: 18px;
 					transition: all 0.3s;
 
 					@include respondmax(xl1261) {

@@ -102,7 +102,7 @@ $(document).ready(function () {
 			$('.class_val').eq(1).text(data.from)
 			$('.length_val').eq(1).text(data.to);
 			$('.length_val').eq(1).text(1);
-			$('.milion_i').text('€m')
+			$('.milion_i').text('m€')
 		},
 		onChange: function (data) {
 			$('.class_val').eq(1).text(data.from);
@@ -110,12 +110,12 @@ $(document).ready(function () {
 
 			if (data.to == 1000) {
 				$('.length_val').eq(1).text(1);
-				$('.milion_i').text('€m')
+				$('.milion_i').text('m€')
 
 
 			} else {
 				$('.length_val').eq(1).text(data.to);
-				$('.milion_i').text('€k')
+				$('.milion_i').text('k€')
 			}
 		}
 	});
