@@ -99,16 +99,56 @@ $(document).ready(function () {
 
 
 
-	function openNav() {
-		document.getElementById("mySidenav").style.width = "250px";
-		document.getElementById("mySidenav").style.right = "0"
-	}
+	// data-img change
 
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-	}
+
+	$('.boat__infoss').mouseover(function () {
+
+
+		let DataImg = $(this).find('.boat__infoss--img').attr('data-img');
+
+		let selfData = $(this).find('img').attr('src');
+
+		$(this).find('img').attr('src', DataImg);
+
+		let changeData = $(this).find('.boat__infoss--img').attr('data-img', selfData);
+
+		
+
+	})
+
+
+
+
+	
+		$('.boat__infoss').mouseout(function () {
+
+
+
+			let DataImg = $(this).find('.boat__infoss--img').attr('data-img');
+
+			let selfData = $(this).find('img').attr('src');
+	
+			$(this).find('img').attr('src', DataImg);
+	
+			let changeData = $(this).find('.boat__infoss--img').attr('data-img', selfData);
+
+
+		})
+
 
 
 
 })
 
+
+
+
+function openNav() {
+	document.getElementById("mySidenav").style.width = "250px";
+	document.getElementById("mySidenav").style.right = "0"
+}
+
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}

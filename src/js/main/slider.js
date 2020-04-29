@@ -158,8 +158,11 @@ $(document).ready(function () {
 	const myLength = $('.mySlider .item').length;
 
 	for (let i = 0; i < myLength; i++) {
+
 		$('.mySlider .owl-dots').append('<button></button>')
 	}
+
+	
 
 	let index = 0;
 

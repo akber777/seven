@@ -227,11 +227,6 @@
 		width: calc((100% / 5) - 30px);
 		transition: all 0.3s;
 
-		&:hover .boat__infoss--img img {
-			transform: translateX(-48px);
-			transition: all 0.3s;
-		}
-
 		@include respondmax(md700) {
 			width: calc((100% / 3) - 27px);
 			display: flex;
@@ -263,14 +258,11 @@
 			position: relative;
 			float: left;
 			margin-right: 7px;
-			width: 48px;
-			overflow: hidden;
-			height: 52px;
 			transition: all 0.3s;
 
 			img {
-				position: absolute;
-				left: 0;
+				position: relative;
+				float: left;
 				transition: all 0.3s;
 			}
 		}
@@ -400,7 +392,7 @@
 					transform: translateY(-50%);
 
 					@include respondmax(lg) {
-						left: 29px;
+						left: 10px;
 					}
 				}
 			}
@@ -719,4 +711,53 @@
 	max-height: 72%;
 	width: 100%;
 	top: 134px;
+}
+
+.boatIn {
+	@include respondmax(lg) {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 0;
+	}
+
+	.boat__infoss {
+		@include respondmax(xl1300) {
+
+			span {
+				font-size: 16px;
+			}
+		}
+
+
+		@include respondmax(sm)
+		{
+			width: 100%;
+		}
+
+		img {
+			@include respondmax(xl) {
+				width: 28px;
+			}
+		}
+	}
+}
+
+.newboat {
+	position: relative;
+	float: left;
+	width: 100%;
+
+	.boat__infoss {
+		width: calc((100% / 4) - 23px);
+
+		&:not(:first-child) {
+			margin-left: 30px;
+		}
+
+		span {
+			font-size: 13px;
+			padding-left: 0;
+		}
+	}
 }

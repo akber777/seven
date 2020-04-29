@@ -2,952 +2,955 @@
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
 
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href='libs/owl.carousel/dist/assets/owl.carousel.min.css'>
-    <link rel="stylesheet" href="libs/Font-Awesome/css/all.min.css">
-    <link rel="stylesheet" href="libs/ion-rangeslider/css/ion.rangeSlider.min.css">
-    <link rel="stylesheet" href="libs/intl-tel-input/build/css/intlTelInput.min.css">
-    <link rel="stylesheet" href="libs/jquery-nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="css/main/main.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href='libs/owl.carousel/dist/assets/owl.carousel.min.css'>
+	<link rel="stylesheet" href="libs/Font-Awesome/css/all.min.css">
+	<link rel="stylesheet" href="libs/ion-rangeslider/css/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="libs/intl-tel-input/build/css/intlTelInput.min.css">
+	<link rel="stylesheet" href="libs/jquery-nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="css/main/main.min.css">
 </head>
 
 <body>
-    <!--[if lte IE 9]>
+	<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <div class="loadingGif">
-        <div class="loading">
-            <h1>Loading</h1><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span></span></span>
-                                                                </span>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </span>
-                </span>
-            </span>
-        </div>
-    </div>
-
-    <!-- my loading don't touch -->
-
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <nav class="full header__nav">
-            <ul class="header__nav--ul">
-                <li><a href="#about" title="">ABOUT US</a></li>
-                <li><a href="#services" title="">SERVICES</a></li>
-                <li><a href="#blog" title="">BLOG</a></li>
-                <li><a href="#contacts" title="">CONTACTS</a></li>
-                <li>
-                    <div class="header__lang">
-                        <ul class="full">
-                            <li>
-                                <a class="acvtiveLi" href="#" title="">En</a>
-                            </li>
-                            <li><a href="#" title="">Ru</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <div class="header__logo">
-                <a href="#" title="">
-                    <img src="img/logo_header.png" alt="">
-                </a>
-            </div>
-            <ul class="header__nav--ulRight">
-                <li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
-                <li class="myItems"><a href="#" title="">CHARTER</a></li>
-                <li class="myLang">
-                    <div class="header__lang">
-                        <ul class="full">
-                            <li>
-                                <a class="acvtiveLi" href="#" title="">En</a>
-                            </li>
-                            <li><a href="#" title="">Ru</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="mynavButton">
-                    <button onclick="openNav()" type="button" class="full">
-                        <img src="img/newmenu.png" alt="">
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="myForms marginMyForms">
-        <div class="boat__forms--in myForms__in full">
-            <div class="mySearch__close">
-                <button type="button" class="button__close">
-
-                </button>
-            </div>
-            <div class="mySearch__title full">
-                <h4>Contact form</h4>
-            </div>
-            <form>
-                <div class="row">
-                    <div class="col-lg-6 mb-5">
-                        <input type="text" class="form-control" placeholder="First name / Last name">
-                    </div>
-                    <div class="col-lg-6 mb-5">
-                        <select name="" id="mySelect">
-                            <option value="">Mr</option>
-                            <option value="">Miss</option>
-                            <option value="">Mrs</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-6 mb-5">
-                        <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="col-lg-6 mb-5">
-                        <input type="tel" id="phone" class="form-control" placeholder="Phone">
-                    </div>
-                    <div class="col-12 mb-5">
-                        <textarea placeholder="Your message" name=""></textarea>
-                    </div>
-                </div>
-                <div class="full">
-                    <button type="submit" class="boat__formsBtn">Send</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- conatact form -->
-
-    <div class="mySearch">
-        <div class="mySearch__content">
-            <div class="mySearch__close">
-                <button type="button" class="button__close">
-
-                </button>
-            </div>
-            <div class="mySearch__title full">
-                <h4>Search</h4>
-            </div>
-            <div class="mySearch__form full">
-                <input placeholder="What are you looking for ?" type="search" id="inputPassword5" class="form-control">
-                <div class="mySearch__btn">
-                    <button type="button">
-
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <header class="full header fixedHEader">
-        <div class="container">
-            <nav class="full header__nav">
-                <ul class="header__nav--ul">
-                    <li><a href="#about" title="">ABOUT US</a></li>
-                    <li><a href="#services" title="">SERVICES</a></li>
-                    <li><a href="#blog" title="">BLOG</a></li>
-                    <li><a href="#contacts" title="">CONTACTS</a></li>
-                </ul>
-                <div class="header__logo">
-                    <a href="#" title="">
-                        <img src="img/logo_header.png" alt="">
-                    </a>
-                </div>
-                <ul class="header__nav--ulRight">
-                    <li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
-                    <li class="myItems"><a href="#" title="">CHARTER</a></li>
-                    <li>
-                        <div class="header__lang">
-                            <ul class="full">
-                                <li>
-                                    <a class="acvtiveLi" href="#" title="">En</a>
-                                </li>
-                                <li><a href="#" title="">Ru</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mynavButton">
-                        <button onclick="openNav()" type="button" class="full">
-                            <img src="img/newmenu.png" alt="">
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- /header -->
-    <header class="full header staticHeader">
-        <div class="container">
-            <nav class="full header__nav">
-                <ul class="header__nav--ul">
-                    <li><a href="#about" title="">ABOUT US</a></li>
-                    <li><a href="#services" title="">SERVICES</a></li>
-                    <li><a href="#blog" title="">BLOG</a></li>
-                    <li><a href="#contacts" title="">CONTACTS</a></li>
-                </ul>
-                <div class="header__logo">
-                    <a href="#" title="">
-                        <img src="img/logo_header.png" alt="">
-                    </a>
-                </div>
-                <ul class="header__nav--ulRight">
-                    <li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
-                    <li class="myItems"><a href="#" title="">CHARTER</a></li>
-                    <li>
-                        <div class="header__lang">
-                            <ul class="full">
-                                <li>
-                                    <a class="acvtiveLi" href="#" title="">En</a>
-                                </li>
-                                <li><a href="#" title="">Ru</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mynavButton">
-                        <button onclick="openNav()" type="button" class="full">
-                            <img src="img/newmenu.png" alt="">
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="whatsap_div">
-        <a href="#" title="">
-            <img class="full" src="img/whatsap.png" alt="">
-        </a>
-    </div>
-
-    <!-- /header -->
-    <main>
-
-<div class="whatsap_div">
-	<a href="#" title="">
-		<img class="full" src="img/whatsap.png" alt="">
-	</a>
-</div>
-<section class="full agency">
-	<div class="agency__slider">
-
-		<div class="agency__slider--title">
-			<p>
-				Search for powerboat rentals, sailboat charters,
-				fishing charters, and houseboat rentals
-			</p>
-		</div>
-
-		<div class="agency__slider--left">
-			<img src="img/seven_layout.png" alt="">
-		</div>
-		<div class="mySlider">
-			<div class="owl-dots">
-				<button></button>
-				<button></button>
-				<button></button>
-				<button></button>
-			</div>
-			<div class="item">
-				<div class="agency__slider--layout">
-
-				</div>
-				<img class="img-fluid" src="img/slider1.png" alt="">
-			</div>
-			<div class="item">
-				<div class="agency__slider--layout">
-
-				</div>
-				<img class="img-fluid" src="img/slider1.png" alt="">
-			</div>
-			<div class="item">
-				<div class="agency__slider--layout">
-
-				</div>
-				<img class="img-fluid" src="img/slider1.png" alt="">
-			</div>
-			<div class="item">
-				<div class="agency__slider--layout">
-
-				</div>
-				<img class="img-fluid" src="img/slider1.png" alt="">
-			</div>
-		</div>
-		<div class="agency__mouse">
-			<button type="button"></button>
+	<div class="loadingGif">
+		<div class="loading">
+			<h1>Loading</h1><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span></span></span>
+																</span>
+															</span>
+														</span>
+													</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</span>
+					</span>
+				</span>
+			</span>
 		</div>
 	</div>
-	<div class="container">
-		<div class="prevButton">
-			<img src="img/left-chevron.png" alt="">
-		</div>
+
+	<!-- my loading don't touch -->
 
 
-		<div class="nextButton">
-			<img src="img/right-arrow.png" alt="">
-		</div>
-		<div class="agency__middle">
-			<div class="agency__middle--icon">
-				<ul>
-					<li>
-						<a href="#" title="">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" title="">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" title="">
-							<i class="fas fa-play"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" title="">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</li>
-				</ul>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<nav class="full header__nav">
+			<ul class="header__nav--ul">
+				<li><a href="#about" title="">ABOUT US</a></li>
+				<li><a href="#services" title="">SERVICES</a></li>
+				<li><a href="#blog" title="">BLOG</a></li>
+				<li><a href="#contacts" title="">CONTACTS</a></li>
+				<li>
+					<div class="header__lang">
+						<ul class="full">
+							<li>
+								<a class="acvtiveLi" href="#" title="">En</a>
+							</li>
+							<li><a href="#" title="">Ru</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="header__logo">
+				<a href="#" title="">
+					<img src="img/logo_header.png" alt="">
+				</a>
 			</div>
-			<div class="agency__middle--search">
-				<button type="button">
+			<ul class="header__nav--ulRight">
+				<li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
+				<li class="myItems"><a href="#" title="">CHARTER</a></li>
+				<li class="myLang">
+					<div class="header__lang">
+						<ul class="full">
+							<li>
+								<a class="acvtiveLi" href="#" title="">En</a>
+							</li>
+							<li><a href="#" title="">Ru</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mynavButton">
+					<button onclick="openNav()" type="button" class="full">
+						<img src="img/newmenu.png" alt="">
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="myForms marginMyForms">
+		<div class="boat__forms--in myForms__in full">
+			<div class="mySearch__close">
+				<button type="button" class="button__close">
+
 				</button>
 			</div>
+			<div class="mySearch__title full">
+				<h4>Contact form</h4>
+			</div>
+			<form>
+				<div class="row">
+					<div class="col-lg-6 mb-5">
+						<input type="text" class="form-control" placeholder="First name / Last name">
+					</div>
+					<div class="col-lg-6 mb-5">
+						<select name="" id="mySelect">
+							<option value="">Mr</option>
+							<option value="">Miss</option>
+							<option value="">Mrs</option>
+						</select>
+					</div>
+					<div class="col-lg-6 mb-5">
+						<input type="text" class="form-control" placeholder="Email">
+					</div>
+					<div class="col-lg-6 mb-5">
+						<input type="tel" id="phone" class="form-control" placeholder="Phone">
+					</div>
+					<div class="col-12 mb-5">
+						<textarea placeholder="Your message" name=""></textarea>
+					</div>
+					<div class="full col-12">
+						<button type="submit" class="boat__formsBtn">Send</button>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
-</section>
-<section class="range full">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-2">
-				<div class="range__select">
-					<span class="full">
-						BOAT TYPE
-					</span>
-					<select name="" class="yearSelect">
-						<option value="">SEMI RIGID</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-xl-7">
-				<div class="range__boxes">
-					<div class="range__boxes--text full">
-						<div class="range__length">
-							<span class="lengthSpan">LENGHT</span>
-							<!-- <span class="mileSpan">FEET</span> -->
-						</div>
-						<div class="range__count">
-							<span class="rangeVal"><i class="class_val">15</i></span>
-							<span>-</span>
-							<span><i class="length_val" style="padding-right:0px;margin-right:-3px;"></i>
-								<i class="kmI">m</i>
-							</span>
-						</div>
-						<div class="range__self full">
-							<input type="text" class="js-range-slider" name="my_range" value="" />
-						</div>
-					</div>
-				</div>
-				<div class="range__boxes">
-					<div class="range__boxes--text full">
-						<div class="range__length">
-							<span>PRICE</span>
-						</div>
-						<div class="range__count">
-							<span class="rangeVal"><i class="class_val">500</i>K</span>
-							<span>-</span>
-							<span class="lengthMoney"><i style="padding-right:0px;margin-right:-3px;"
-									class="length_val"></i>
-								<i class="milion_i">m</i>
-							</span>
-						</div>
-						<div class="range__self full">
-							<input type="text" class="js-range-money" name="my_range" value="" />
-						</div>
-					</div>
-				</div>
-				<div class="range__boxes">
-					<div class="range__boxes--text full">
-						<div class="range__length">
-							<span>GUESTS</span>
-						</div>
-						<div class="range__count">
-							<span class="rangeVal"><i class="class_val">3</i></span>
-							<span>-</span>
-							<span><i class="length_val"></i>PERSONS</span>
-						</div>
-						<div class="range__self full">
-							<input type="text" class="js-range-person" name="my_range" value="" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="range__selectEnd">
-					<span class="full">
-						BY YEAR
-					</span>
-					<select class="yearSelect" name="">
-						<option value="">Any</option>
-						<option value="">New Build</option>
-						<option value="">UP TO 2 YEARS</option>
-						<option value="">UP TO 5 YEARS</option>
-						<option value="">Over 10 YEARS</option>
-					</select>
-				</div>
-				<div class="range__selectEnd">
-					<span class="full">
-						BUILDER
-					</span>
-					<select name="" class="yearSelect">
-						<option value="">GOCREATIVE</option>
-					</select>
-				</div>
-			</div>
-		</div>
-	</div>
-	<button class="range__searchBtn" type="button">SEARCH</button>
-</section>
-<section class="form full" style="background-image: url(img/Walle.png);">
-	<div class="agency__slider--layout">
 
+	<!-- conatact form -->
+
+	<div class="mySearch">
+		<div class="mySearch__content">
+			<div class="mySearch__close">
+				<button type="button" class="button__close">
+
+				</button>
+			</div>
+			<div class="mySearch__title full">
+				<h4>Search</h4>
+			</div>
+			<div class="mySearch__form full">
+				<input placeholder="What are you looking for ?" type="search" id="inputPassword5" class="form-control">
+				<div class="mySearch__btn">
+					<button type="button">
+
+					</button>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="form__left">
-		<img src="img/formleft.png" alt="">
+	<header class="full header fixedHEader">
+		<div class="container">
+			<nav class="full header__nav">
+				<ul class="header__nav--ul">
+					<li><a href="#about" title="">ABOUT US</a></li>
+					<li><a href="#services" title="">SERVICES</a></li>
+					<li><a href="#blog" title="">BLOG</a></li>
+					<li><a href="#contacts" title="">CONTACTS</a></li>
+				</ul>
+				<div class="header__logo">
+					<a href="#" title="">
+						<img src="img/logo_header.png" alt="">
+					</a>
+				</div>
+				<ul class="header__nav--ulRight">
+					<li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
+					<li class="myItems"><a href="#" title="">CHARTER</a></li>
+					<li>
+						<div class="header__lang">
+							<ul class="full">
+								<li>
+									<a class="acvtiveLi" href="#" title="">En</a>
+								</li>
+								<li><a href="#" title="">Ru</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mynavButton">
+						<button onclick="openNav()" type="button" class="full">
+							<img src="img/newmenu.png" alt="">
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- /header -->
+	<header class="full header staticHeader">
+		<div class="container">
+			<nav class="full header__nav">
+				<ul class="header__nav--ul">
+					<li><a href="#about" title="">ABOUT US</a></li>
+					<li><a href="#services" title="">SERVICES</a></li>
+					<li><a href="#blog" title="">BLOG</a></li>
+					<li><a href="#contacts" title="">CONTACTS</a></li>
+				</ul>
+				<div class="header__logo">
+					<a href="#" title="">
+						<img src="img/logo_header.png" alt="">
+					</a>
+				</div>
+				<ul class="header__nav--ulRight">
+					<li class="myItems"><a class="acvtiveLi" href="#" title="">AGENCY</a></li>
+					<li class="myItems"><a href="#" title="">CHARTER</a></li>
+					<li>
+						<div class="header__lang">
+							<ul class="full">
+								<li>
+									<a class="acvtiveLi" href="#" title="">En</a>
+								</li>
+								<li><a href="#" title="">Ru</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mynavButton">
+						<button onclick="openNav()" type="button" class="full">
+							<img src="img/newmenu.png" alt="">
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="whatsap_div">
+		<a href="#" title="">
+			<img class="full" src="img/whatsap.png" alt="">
+		</a>
 	</div>
-	<!-- 	<div class="form__imgBox full">
+
+	<!-- /header -->
+	<main>
+
+		<div class="whatsap_div">
+			<a href="#" title="">
+				<img class="full" src="img/whatsap.png" alt="">
+			</a>
+		</div>
+		<section class="full agency">
+			<div class="agency__slider">
+
+				<div class="agency__slider--title">
+					<p>
+						Search for powerboat rentals, sailboat charters,
+						fishing charters, and houseboat rentals
+					</p>
+				</div>
+
+				<div class="agency__slider--left">
+					<img src="img/seven_layout.png" alt="">
+				</div>
+				<div class="mySlider">
+					<div class="owl-dots">
+					</div>
+					<div class="item">
+						<div class="agency__slider--layout">
+
+						</div>
+						<img class="img-fluid" src="img/slider1.png" alt="">
+					</div>
+					<div class="item">
+						<div class="agency__slider--layout">
+
+						</div>
+						<img class="img-fluid" src="img/slider1.png" alt="">
+					</div>
+					<div class="item">
+						<div class="agency__slider--layout">
+
+						</div>
+						<img class="img-fluid" src="img/slider1.png" alt="">
+					</div>
+					<div class="item">
+						<div class="agency__slider--layout">
+
+						</div>
+						<img class="img-fluid" src="img/slider1.png" alt="">
+					</div>
+				</div>
+				<div class="agency__mouse">
+					<button type="button"></button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="prevButton">
+					<img src="img/left-chevron.png" alt="">
+				</div>
+
+
+				<div class="nextButton">
+					<img src="img/right-arrow.png" alt="">
+				</div>
+				<div class="agency__middle">
+					<div class="agency__middle--icon">
+						<ul>
+							<li>
+								<a href="#" title="">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="fas fa-play"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="agency__middle--search">
+						<button type="button">
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="range full">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2">
+						<div class="range__select">
+							<span class="full">
+								BOAT TYPE
+							</span>
+							<select name="" class="yearSelect">
+								<option value="">SEMI RIGID</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-xl-7">
+						<div class="range__boxes">
+							<div class="range__boxes--text full">
+								<div class="range__length">
+									<span class="lengthSpan">LENGHT</span>
+									<!-- <span class="mileSpan">FEET</span> -->
+								</div>
+								<div class="range__count">
+									<span class="rangeVal"><i class="class_val">15</i></span>
+									<span>-</span>
+									<span><i class="length_val" style="padding-right:0px;margin-right:-3px;"></i>
+										<i class="kmI">m</i>
+									</span>
+								</div>
+								<div class="range__self full">
+									<input type="text" class="js-range-slider" name="my_range" value="" />
+								</div>
+							</div>
+						</div>
+						<div class="range__boxes">
+							<div class="range__boxes--text full">
+								<div class="range__length">
+									<span>PRICE</span>
+								</div>
+								<div class="range__count">
+									<span class="rangeVal"><i class="class_val">500</i>K</span>
+									<span>-</span>
+									<span class="lengthMoney"><i style="padding-right:0px;margin-right:-3px;"
+											class="length_val"></i>
+										<i class="milion_i">m</i>
+									</span>
+								</div>
+								<div class="range__self full">
+									<input type="text" class="js-range-money" name="my_range" value="" />
+								</div>
+							</div>
+						</div>
+						<div class="range__boxes">
+							<div class="range__boxes--text full">
+								<div class="range__length">
+									<span>GUESTS</span>
+								</div>
+								<div class="range__count">
+									<span class="rangeVal"><i class="class_val">3</i></span>
+									<span>-</span>
+									<span><i class="length_val"></i>PERSONS</span>
+								</div>
+								<div class="range__self full">
+									<input type="text" class="js-range-person" name="my_range" value="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="range__selectEnd">
+							<span class="full">
+								BY YEAR
+							</span>
+							<select class="yearSelect" name="">
+								<option value="">Any</option>
+								<option value="">New Build</option>
+								<option value="">UP TO 2 YEARS</option>
+								<option value="">UP TO 5 YEARS</option>
+								<option value="">Over 10 YEARS</option>
+							</select>
+						</div>
+						<div class="range__selectEnd">
+							<span class="full">
+								BUILDER
+							</span>
+							<select name="" class="yearSelect">
+								<option value="">GOCREATIVE</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="range__searchBtn" type="button">SEARCH</button>
+		</section>
+		<section class="form full" style="background-image: url(img/Walle.png);">
+			<div class="agency__slider--layout">
+
+			</div>
+			<div class="form__left">
+				<img src="img/formleft.png" alt="">
+			</div>
+			<!-- 	<div class="form__imgBox full">
 		<img src="img/formimg.png" alt="">
 	</div> -->
-	<div class="form__title">
-		<h4>
-			Get an unique feeling
-			CONTACT US TO
-			FIND AMAZING SERVICE
-		</h4>
-	</div>
-	<div class="form__container">
-		<div class="container">
-			<div class="form__buttonBox full">
-				<div class="form__button formOpens">
+			<div class="form__title">
+				<h4>
+					Get an unique feeling
+					CONTACT US TO
+					FIND AMAZING SERVICE
+				</h4>
+			</div>
+			<div class="form__container">
+				<div class="container">
+					<div class="form__buttonBox full">
+						<div class="form__button formOpens">
+							<a href="#" title="">
+								<button type="button">
+									CONTACT FORM
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="About full" id="blog">
+			<div class="container">
+				<div class="About__title full">
+					<div class="About__title--lineLeft" style="width: calc(55% - 289px);">
+
+					</div>
+					<div class="About__title--box">
+
+					</div>
+					<div class="About__title--in">
+						<h4>Featured Boats</h4>
+					</div>
+					<div class="About__title--lineRight" style="width: calc(55% - 289px);">
+
+					</div>
+				</div>
+				<div class="blog full">
+					<div class="charter full">
+						<div class="row">
+							<div class="col-xl-4 charter__PAD">
+								<div class="charter__box full">
+									<div class="charter__box--img full">
+										<img class="full" src="img/predator1.png" alt="">
+										<div class="charter__btn">
+											<div class="form__button">
+												<a href="#" title="">
+													<button type="button">
+														€ 450 / per month
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="charter__box--title full">
+										<h4>ALEXANDRA</h4>
+									</div>
+									<div class="boat__boatInfo--in newboat full charter__infos">
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations1.png" alt="">
+											</div>
+											<span>
+												Kumbor
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/loactions5.png" alt="">
+											</div>
+											<span>
+												3
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations3.png" alt="">
+											</div>
+											<span>
+												36 mph
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations2.png" alt="">
+											</div>
+											<span>
+												14.31 M
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 charter__PAD">
+								<div class="charter__box full">
+									<div class="charter__box--img full">
+										<img class="full" src="img/predator1.png" alt="">
+										<div class="charter__btn">
+											<div class="form__button">
+												<a href="#" title="">
+													<button type="button">
+														€ 450 / per month
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="charter__box--title full">
+										<h4>ALEXANDRA</h4>
+									</div>
+									<div class="boat__boatInfo--in newboat full charter__infos">
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations1.png" alt="">
+											</div>
+											<span>
+												Kumbor
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/loactions5.png" alt="">
+											</div>
+											<span>
+												3
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations3.png" alt="">
+											</div>
+											<span>
+												36 mph
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations2.png" alt="">
+											</div>
+											<span>
+												14.31 M
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 charter__PAD">
+								<div class="charter__box full">
+									<div class="charter__box--img full">
+										<img class="full" src="img/predator1.png" alt="">
+										<div class="charter__btn">
+											<div class="form__button">
+												<a href="#" title="">
+													<button type="button">
+														€ 450 / per month
+													</button>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="charter__box--title full">
+										<h4>ALEXANDRA</h4>
+									</div>
+									<div class="boat__boatInfo--in newboat full charter__infos">
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations1.png" alt="">
+											</div>
+											<span>
+												Kumbor
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/loactions5.png" alt="">
+											</div>
+											<span>
+												3
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations3.png" alt="">
+											</div>
+											<span>
+												36 mph
+											</span>
+										</div>
+										<div class="boat__infoss infos">
+											<div class="boat__infoss--img">
+												<img src="img/locations2.png" alt="">
+											</div>
+											<span>
+												14.31 M
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Services__endTitle full">
 					<a href="#" title="">
-						<button type="button">
-							CONTACT FORM
-						</button>
+						<button type="button">VIEW MORE...</button>
 					</a>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<section class="About full" id="blog">
-	<div class="container">
-		<div class="About__title full">
-			<div class="About__title--lineLeft" style="width: calc(55% - 289px);">
+		</section>
+		<section class="About full" id="contacts">
+			<div class="container">
+				<div class="About__title full">
+					<div class="About__title--lineLeft">
 
-			</div>
-			<div class="About__title--box">
+					</div>
+					<div class="About__title--box">
 
-			</div>
-			<div class="About__title--in">
-				<h4>Featured Boats</h4>
-			</div>
-			<div class="About__title--lineRight" style="width: calc(55% - 289px);">
+					</div>
+					<div class="About__title--in">
+						<h4>CONTACT US</h4>
+					</div>
+					<div class="About__title--lineRight">
 
-			</div>
-		</div>
-		<div class="blog full">
-			<div class="charter full">
-				<div class="row">
-					<div class="col-xl-4 charter__PAD">
-						<div class="charter__box full">
-							<div class="charter__box--img full">
-								<img class="full" src="img/predator1.png" alt="">
-								<div class="charter__btn">
-									<div class="form__button">
-										<a href="#" title="">
-											<button type="button">
-												€ 450 / per month
-											</button>
+					</div>
+				</div>
+				<div class="contact full">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="contact__Boxes">
+								<div class="contact__imgBox full">
+									<img src="img/contact1.png" alt="">
+								</div>
+								<div class="contact__textBox">
+									<h4>
+										ADDRESS
+									</h4>
+									<h5>
+										FOR VISIT OUR OFFICE
+									</h5>
+									<span>
+										Mahmutbey Mah. Taşocağı Cad. No:3, Ağaoğlu My Office 212,
+										Kat:26,D:432,34218,Bagcilar/Istanbul
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contact__Boxes">
+								<div class="contact__imgBox full">
+									<img src="img/contact2.png" alt="">
+								</div>
+								<div class="contact__textBox">
+									<h4>
+										PHONE
+									</h4>
+									<h5>
+										FOR MOBILE FANS
+									</h5>
+									<a href="tel:(+90 542) 575 0743" title="">
+										(+90 542) 575 0743
+									</a>
+									</span>
+									<a href="tel:(+90 212) 576 1221" title="">
+										(+90 212) 576 1221
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contact__Boxes">
+								<div class="contact__imgBox full">
+									<img src="img/contact3.png" alt="">
+								</div>
+								<div class="contact__textBox">
+									<h4>
+										EMAIL
+									</h4>
+									<h5>
+										FOR ASK ANYTHING
+									</h5>
+									<span>
+										<a href="mailto:istanbul@gocreative.com.tr" title="">
+											istanbul@gocreative.com.tr
 										</a>
-									</div>
-								</div>
-							</div>
-							<div class="charter__box--title full">
-								<h4>ALEXANDRA</h4>
-							</div>
-							<div class="boat__boatInfo--in  full charter__infos">
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations1.png" alt="">
-									</div>
-									<span>
-										Kumbor
 									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/loactions5.png" alt="">
-									</div>
-									<span>
-										3
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations3.png" alt="">
-									</div>
-									<span>
-										36 mph
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations2.png" alt="">
-									</div>
-									<span>
-										14.31 M
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-4 charter__PAD">
-						<div class="charter__box full">
-							<div class="charter__box--img full">
-								<img class="full" src="img/predator1.png" alt="">
-								<div class="charter__btn">
-									<div class="form__button">
-										<a href="#" title="">
-											<button type="button">
-												€ 450 / per month
-											</button>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="charter__box--title full">
-								<h4>ALEXANDRA</h4>
-							</div>
-							<div class="boat__boatInfo--in  full charter__infos">
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations1.png" alt="">
-									</div>
-									<span>
-										Kumbor
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/loactions5.png" alt="">
-									</div>
-									<span>
-										3
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations3.png" alt="">
-									</div>
-									<span>
-										36 mph
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations2.png" alt="">
-									</div>
-									<span>
-										14.31 M
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-4 charter__PAD">
-						<div class="charter__box full">
-							<div class="charter__box--img full">
-								<img class="full" src="img/predator1.png" alt="">
-								<div class="charter__btn">
-									<div class="form__button">
-										<a href="#" title="">
-											<button type="button">
-												€ 450 / per month
-											</button>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="charter__box--title full">
-								<h4>ALEXANDRA</h4>
-							</div>
-							<div class="boat__boatInfo--in  full charter__infos">
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations1.png" alt="">
-									</div>
-									<span>
-										Kumbor
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/loactions5.png" alt="">
-									</div>
-									<span>
-										3
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations3.png" alt="">
-									</div>
-									<span>
-										36 mph
-									</span>
-								</div>
-								<div class="boat__infoss infos">
-									<div class="boat__infoss--img">
-										<img src="img/locations2.png" alt="">
-									</div>
-									<span>
-										14.31 M
-									</span>
+									<a href="mailto:istanbul@gocreative.com.tr" title="">
+										lets@gocreative.az
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="Services__endTitle full">
-			<a href="#" title="">
-				<button type="button">VIEW MORE...</button>
-			</a>
-		</div>
-	</div>
-</section>
-<section class="About full" id="contacts">
-	<div class="container">
-		<div class="About__title full">
-			<div class="About__title--lineLeft">
+		</section>
+		<section class="mapsBox full">
+			<div class="mapsBox__abolute">
+				<div class="mapsBox__left">
+					<img src="img/map1.png" alt="">
+					<div class="mapsBox__layout">
 
-			</div>
-			<div class="About__title--box">
-
-			</div>
-			<div class="About__title--in">
-				<h4>CONTACT US</h4>
-			</div>
-			<div class="About__title--lineRight">
-
-			</div>
-		</div>
-		<div class="contact full">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="contact__Boxes">
-						<div class="contact__imgBox full">
-							<img src="img/contact1.png" alt="">
-						</div>
-						<div class="contact__textBox">
-							<h4>
-								ADDRESS
-							</h4>
-							<h5>
-								FOR VISIT OUR OFFICE
-							</h5>
-							<span>
-								Mahmutbey Mah. Taşocağı Cad. No:3, Ağaoğlu My Office 212,
-								Kat:26,D:432,34218,Bagcilar/Istanbul
-							</span>
-						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="contact__Boxes">
-						<div class="contact__imgBox full">
-							<img src="img/contact2.png" alt="">
-						</div>
-						<div class="contact__textBox">
-							<h4>
-								PHONE
-							</h4>
-							<h5>
-								FOR MOBILE FANS
-							</h5>
-							<a href="tel:(+90 542) 575 0743" title="">
-								(+90 542) 575 0743
-							</a>
-							</span>
-							<a href="tel:(+90 212) 576 1221" title="">
-								(+90 212) 576 1221
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="contact__Boxes">
-						<div class="contact__imgBox full">
-							<img src="img/contact3.png" alt="">
-						</div>
-						<div class="contact__textBox">
-							<h4>
-								EMAIL
-							</h4>
-							<h5>
-								FOR ASK ANYTHING
-							</h5>
-							<span>
-								<a href="mailto:istanbul@gocreative.com.tr" title="">
-									istanbul@gocreative.com.tr
-								</a>
-							</span>
-							<a href="mailto:istanbul@gocreative.com.tr" title="">
-								lets@gocreative.az
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="mapsBox full">
-	<div class="mapsBox__abolute">
-		<div class="mapsBox__left">
-			<img src="img/map1.png" alt="">
-			<div class="mapsBox__layout">
+				<div class="mapsBox__right">
+					<div class="mapsBox__layout">
 
-			</div>
-		</div>
-		<div class="mapsBox__right">
-			<div class="mapsBox__layout">
-
-			</div>
-			<div id="map" style="">
-				<ymaps class="ymaps-2-1-76-map" style="width: 952px; height: 702px;">
-					<ymaps
-						class="ymaps-2-1-76-map ymaps-2-1-76-i-ua_js_yes ymaps-2-1-76-map-bg ymaps-2-1-76-islets_map-lang-en"
-						style="width: 952px; height: 702px;">
-						<ymaps class="ymaps-2-1-76-inner-panes">
-							<ymaps class="ymaps-2-1-76-events-pane ymaps-2-1-76-user-selection-none" unselectable="on"
-								style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url(&quot;https://api-maps.yandex.ru/2.1.76/build/release/images/cursor/grab.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.1.76/build/release/images/cursor/grab.cur&quot;), move;">
-							</ymaps>
-							<ymaps class="ymaps-2-1-76-ground-pane"
-								style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 501;">
-								<ymaps style="z-index: 150; position: absolute;"><canvas height="958" width="1208"
-										style="position: absolute; width: 1208px; height: 958px; left: -128px; top: -128px;"></canvas>
-								</ymaps>
-							</ymaps>
-							<ymaps class="ymaps-2-1-76-copyrights-pane"
-								style="height: 0px; bottom: 0px; right: 0px; top: auto; left: 0px; position: absolute; z-index: 5002;">
-								<ymaps>
-									<ymaps class="ymaps-2-1-76-copyright ymaps-2-1-76-copyright_logo_no" style="">
-										<ymaps class="ymaps-2-1-76-copyright__fog">…</ymaps>
-										<ymaps class="ymaps-2-1-76-copyright__wrap">
-											<ymaps class="ymaps-2-1-76-copyright__layout">
-												<ymaps class="ymaps-2-1-76-copyright__content-cell">
-													<ymaps class="ymaps-2-1-76-copyright__content">
-														<ymaps class="ymaps-2-1-76-copyright__text">© Yandex</ymaps>
-														<ymaps class="ymaps-2-1-76-copyright__agreement">&nbsp;<a
-																class="ymaps-2-1-76-copyright__link" target="_blank"
-																href="https://yandex.com/legal/maps_termsofuse/?lang=en">User
-																Agreement</a></ymaps>
+					</div>
+					<div id="map" style="">
+						<ymaps class="ymaps-2-1-76-map" style="width: 952px; height: 702px;">
+							<ymaps
+								class="ymaps-2-1-76-map ymaps-2-1-76-i-ua_js_yes ymaps-2-1-76-map-bg ymaps-2-1-76-islets_map-lang-en"
+								style="width: 952px; height: 702px;">
+								<ymaps class="ymaps-2-1-76-inner-panes">
+									<ymaps class="ymaps-2-1-76-events-pane ymaps-2-1-76-user-selection-none"
+										unselectable="on"
+										style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url(&quot;https://api-maps.yandex.ru/2.1.76/build/release/images/cursor/grab.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.1.76/build/release/images/cursor/grab.cur&quot;), move;">
+									</ymaps>
+									<ymaps class="ymaps-2-1-76-ground-pane"
+										style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 501;">
+										<ymaps style="z-index: 150; position: absolute;"><canvas height="958"
+												width="1208"
+												style="position: absolute; width: 1208px; height: 958px; left: -128px; top: -128px;"></canvas>
+										</ymaps>
+									</ymaps>
+									<ymaps class="ymaps-2-1-76-copyrights-pane"
+										style="height: 0px; bottom: 0px; right: 0px; top: auto; left: 0px; position: absolute; z-index: 5002;">
+										<ymaps>
+											<ymaps class="ymaps-2-1-76-copyright ymaps-2-1-76-copyright_logo_no"
+												style="">
+												<ymaps class="ymaps-2-1-76-copyright__fog">…</ymaps>
+												<ymaps class="ymaps-2-1-76-copyright__wrap">
+													<ymaps class="ymaps-2-1-76-copyright__layout">
+														<ymaps class="ymaps-2-1-76-copyright__content-cell">
+															<ymaps class="ymaps-2-1-76-copyright__content">
+																<ymaps class="ymaps-2-1-76-copyright__text">© Yandex
+																</ymaps>
+																<ymaps class="ymaps-2-1-76-copyright__agreement">
+																	&nbsp;<a class="ymaps-2-1-76-copyright__link"
+																		target="_blank"
+																		href="https://yandex.com/legal/maps_termsofuse/?lang=en">User
+																		Agreement</a></ymaps>
+															</ymaps>
+														</ymaps>
+														<ymaps class="ymaps-2-1-76-copyright__logo-cell"><a
+																class="ymaps-2-1-76-copyright__logo ymaps-2-1-76-copyright__logo_lang_en"
+																href="" target="_blank"></a></ymaps>
 													</ymaps>
 												</ymaps>
-												<ymaps class="ymaps-2-1-76-copyright__logo-cell"><a
-														class="ymaps-2-1-76-copyright__logo ymaps-2-1-76-copyright__logo_lang_en"
-														href="" target="_blank"></a></ymaps>
+											</ymaps>
+										</ymaps>
+										<ymaps class="ymaps-2-1-76-map-copyrights-promo">
+											<ymaps>
+												<div class="ymaps-2-1-76-gotoymaps" title="">
+													<div class="ymaps-2-1-76-gotoymaps-container">
+														<div class="ymaps-2-1-76-gotoymaps-container__pin"></div>
+														<div class="ymaps-2-1-76-gotoymaps-container__text">
+															<div
+																class="ymaps-2-1-76-gotoymaps-container__text-container">
+																<ymaps class="">Directions</ymaps>
+															</div>
+														</div>
+													</div>
+												</div>
 											</ymaps>
 										</ymaps>
 									</ymaps>
-								</ymaps>
-								<ymaps class="ymaps-2-1-76-map-copyrights-promo">
-									<ymaps>
-										<div class="ymaps-2-1-76-gotoymaps" title="">
-											<div class="ymaps-2-1-76-gotoymaps-container">
-												<div class="ymaps-2-1-76-gotoymaps-container__pin"></div>
-												<div class="ymaps-2-1-76-gotoymaps-container__text">
-													<div class="ymaps-2-1-76-gotoymaps-container__text-container">
-														<ymaps class="">Directions</ymaps>
-													</div>
-												</div>
-											</div>
-										</div>
+									<ymaps class="ymaps-2-1-76-controls-pane"
+										style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 4503;">
+										<ymaps class="ymaps-2-1-76-controls__toolbar" style="margin-top: 10px;">
+											<ymaps class="ymaps-2-1-76-controls__toolbar_left"></ymaps>
+											<ymaps class="ymaps-2-1-76-controls__toolbar_right"></ymaps>
+										</ymaps>
+										<ymaps class="ymaps-2-1-76-controls__bottom" style="top: 702px;"></ymaps>
 									</ymaps>
-								</ymaps>
-							</ymaps>
-							<ymaps class="ymaps-2-1-76-controls-pane"
-								style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 4503;">
-								<ymaps class="ymaps-2-1-76-controls__toolbar" style="margin-top: 10px;">
-									<ymaps class="ymaps-2-1-76-controls__toolbar_left"></ymaps>
-									<ymaps class="ymaps-2-1-76-controls__toolbar_right"></ymaps>
-								</ymaps>
-								<ymaps class="ymaps-2-1-76-controls__bottom" style="top: 702px;"></ymaps>
-							</ymaps>
-							<ymaps class="ymaps-2-1-76-places-pane"
-								style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 2004;">
-								<ymaps class="ymaps-2-1-76-placemark-overlay ymaps-2-1-76-user-selection-none"
-									unselectable="on"
-									style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 397px; top: 390px;">
-									<ymaps>
-										<ymaps class="ymaps-2-1-76-image "
-											style="position: absolute; left: -35px; top: -63px; width: 70px; height: 76px; opacity: 1; background-position: 0px 0px; background-size: 70px 76px; background-image: url(&quot;http://127.0.0.1:5500/build/img/placemarker.png&quot;);">
+									<ymaps class="ymaps-2-1-76-places-pane"
+										style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 2004;">
+										<ymaps class="ymaps-2-1-76-placemark-overlay ymaps-2-1-76-user-selection-none"
+											unselectable="on"
+											style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 397px; top: 390px;">
+											<ymaps>
+												<ymaps class="ymaps-2-1-76-image "
+													style="position: absolute; left: -35px; top: -63px; width: 70px; height: 76px; opacity: 1; background-position: 0px 0px; background-size: 70px 76px; background-image: url(&quot;http://127.0.0.1:5500/build/img/placemarker.png&quot;);">
+												</ymaps>
+											</ymaps>
 										</ymaps>
 									</ymaps>
 								</ymaps>
 							</ymaps>
 						</ymaps>
-					</ymaps>
-				</ymaps>
-			</div>
-		</div>
-	</div>
-	<div class="container height">
-		<div class="mapsBox__relative full">
-			<div class="mapsBox__relative--left">
-				<div class="mapsBox__relative--title mb-3 full">
-					<h4>SEND YOUR MESSAGE</h4>
-					<p>Don’t Hesitate to Contact US</p>
+					</div>
 				</div>
-				<form>
-					<div class="form-row mt-5">
-						<div class="col mapsBox__form pl-0 pr-0 ml-1 mr-5 mt-4">
-							<input type="text" class="form-control" placeholder="FIRST NAME / LAST NAME ">
-							<svg class="graphic mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
-								preserveAspectRatio="none">
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
-								</path>
-							</svg>
-						</div>
-						<div class="col mapsBox__form  pl-0 pr-0 ml-1 mr-1 mt-4">
-							<input type="text" class="form-control" placeholder="EMAIL">
-							<svg class="graphic mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
-								preserveAspectRatio="none">
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
-								</path>
-							</svg>
-						</div>
-					</div>
-					<div class="form-row mt-3 mapsBox__form  pl-0 pr-0 ">
-						<div class="col  pl-0 pr-0 ml-1 mr-1 mt-4">
-							<input type="text" class="form-control" placeholder="SUBJECT">
-							<svg class="graphic mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
-								preserveAspectRatio="none">
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
-								</path>
-							</svg>
-						</div>
-					</div>
-					<div class="form-row mt-3 mapsBox__form  pl-0 pr-0 ">
-						<div class="col  pl-0 pr-0 ml-1 mr-1 mt-4">
-							<textarea name="" placeholder="MESSAGE"></textarea>
-							<svg class="graphic2 mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
-								preserveAspectRatio="none">
-								<path
-									d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
-								</path>
-							</svg>
-						</div>
-					</div>
-					<div class="form-row mt-3 mapsBox__form  pl-0 pr-0">
-						<div class="col  pl-0 pr-0 ml-1 mr-1 mt-3">
-							<button type="button">
-								SEND YOUR MESSAGE
-							</button>
-						</div>
-					</div>
-				</form>
 			</div>
-			<!-- left end -->
+			<div class="container height">
+				<div class="mapsBox__relative full">
+					<div class="mapsBox__relative--left">
+						<div class="mapsBox__relative--title mb-3 full">
+							<h4>SEND YOUR MESSAGE</h4>
+							<p>Don’t Hesitate to Contact US</p>
+						</div>
+						<form>
+							<div class="form-row mt-5">
+								<div class="col mapsBox__form pl-0 pr-0 ml-1 mr-5 mt-4">
+									<input type="text" class="form-control" placeholder="FIRST NAME / LAST NAME ">
+									<svg class="graphic mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
+										preserveAspectRatio="none">
+										<path
+											d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+										</path>
+									</svg>
+								</div>
+								<div class="col mapsBox__form  pl-0 pr-0 ml-1 mr-1 mt-4">
+									<input type="text" class="form-control" placeholder="EMAIL">
+									<svg class="graphic mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
+										preserveAspectRatio="none">
+										<path
+											d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+										</path>
+									</svg>
+								</div>
+							</div>
+							<div class="form-row mt-3 mapsBox__form  pl-0 pr-0 ">
+								<div class="col  pl-0 pr-0 ml-1 mr-1 mt-4">
+									<input type="text" class="form-control" placeholder="SUBJECT">
+									<svg class="graphic mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
+										preserveAspectRatio="none">
+										<path
+											d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+										</path>
+									</svg>
+								</div>
+							</div>
+							<div class="form-row mt-3 mapsBox__form  pl-0 pr-0 ">
+								<div class="col  pl-0 pr-0 ml-1 mr-1 mt-4">
+									<textarea name="" placeholder="MESSAGE"></textarea>
+									<svg class="graphic2 mysvg" width="300%" height="100%" viewBox="0 0 1200 60"
+										preserveAspectRatio="none">
+										<path
+											d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+										</path>
+									</svg>
+								</div>
+							</div>
+							<div class="form-row mt-3 mapsBox__form  pl-0 pr-0">
+								<div class="col  pl-0 pr-0 ml-1 mr-1 mt-3">
+									<button type="button">
+										SEND YOUR MESSAGE
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- left end -->
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer full">
+		<div class="full footer__contain">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="full footer__text">
+							<span>Copyright 2020 © 7 Oceans Yachting</span>
+							<div class="footer__privacy">
+								<div class="agency__middle--icon">
+									<ul>
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-instagram"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fas fa-play"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-</section>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="libs/Font-Awesome/js/all.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript">
+	</script>
+	<script src="libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+	<script src="libs/intl-tel-input/build/js/intlTelInput-jquery.min.js"></script>
+	<script src="libs/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="js/all.min.js"></script>
 
-</main>
-<footer class="footer full">
-  <div class="full footer__contain">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="full footer__text">
-            <span>Copyright 2020 © 7 Oceans Yachting</span>
-            <div class="footer__privacy">
-              <div class="agency__middle--icon">
-                <ul>
-                  <li>
-                    <a href="#" title="">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="">
-                      <i class="fas fa-play"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" title="">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
-<script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="libs/Font-Awesome/js/all.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript">
-</script>
-<script src="libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-<script src="libs/intl-tel-input/build/js/intlTelInput-jquery.min.js"></script>
-<script src="libs/jquery-nice-select/js/jquery.nice-select.min.js"></script>
-<script src="js/all.min.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
