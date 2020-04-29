@@ -69,6 +69,10 @@
 		transition: all 0.3s;
 		background-color: #b11116;
 	}
+
+	@include respondmax(sm) {
+		display: none;
+	}
 }
 
 .nextButton {
@@ -94,6 +98,30 @@
 		transition: all 0.3s;
 		background-color: #b11116;
 	}
+
+	@include respondmax(sm) {
+		display: none;
+	}
+}
+
+.iti-mobile .iti__country-list {
+	@include respondmax(md) {
+		width: 100% !important;
+		z-index: 5555;
+	}
+}
+
+
+.iti--container{
+	z-index: 5555;
+}
+
+
+@media(max-width:575px)
+{
+	.activeOverflow{
+		overflow: hidden !important;
+	}
 }
 
 .closeFlag {
@@ -112,7 +140,7 @@
 
 .iti-mobile .iti--container {
 	@include respondmax(sm) {
-		width: 300px !important;
+		width: 242px !important;
 	}
 }
 

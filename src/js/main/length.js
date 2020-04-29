@@ -71,7 +71,7 @@ $(document).ready(function () {
 	// 		onStart: function (data) {
 	// 			$('.class_val').eq(0).text(data.from);
 	// 			$('.length_val').eq(0).text(data.to);
-				
+
 	// 		},
 	// 		onChange: function (data) {
 	// 			$('.class_val').eq(0).text(data.from);
@@ -89,7 +89,7 @@ $(document).ready(function () {
 
 
 	// end
-	
+
 
 	$(".js-range-money").ionRangeSlider({
 		type: "double",
@@ -149,15 +149,24 @@ $(document).ready(function () {
 
 
 
+	// control international flag input
+
+	$("*").click(function (event) {
+
+		var target = $(event.target);
+		if (target.is(".iti__flag,.iti__selected-flag,iti__arrow")) {
+			$('body').addClass('activeOverflow');
+		}else{
+			$('body').removeClass('activeOverflow');
+
+		}
+	});
 
 
 
 
-
-
-
-
-
+	
+	
 
 
 
