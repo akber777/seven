@@ -370,7 +370,7 @@ header {
     left: 0 !important;
     transform: translateY(0%) !important;
     transition: all 0.3s !important;
-    z-index: 5555 !important;
+    z-index: 55 !important;
 }
 
 .iti {
@@ -396,6 +396,7 @@ header {
     transition: 0.5s;
     padding-top: 60px;
     z-index: 55255;
+    transform: translateX(150%);
 
     .header__lang {
         display: block;
@@ -513,31 +514,22 @@ header {
     }
 }
 
-
-
-.irs .to > i:first-child{
+.irs .to > i:first-child {
     margin-left: 0 !important;
-} 
+}
 
-
-.mynavButton{
+.mynavButton {
     margin-right: 0 !important;
 }
 
-
-.header__nav--ulRight li:nth-child(3)
-{
+.header__nav--ulRight li:nth-child(3) {
     margin-right: 0 !important;
 
-    @include respondmax(lg)
-    {
-        margin-right:27px !important;
+    @include respondmax(lg) {
+        margin-right: 27px !important;
     }
 
-
-    @include respondmax(md)
-    {
-        margin-right:0px !important;
+    @include respondmax(md) {
+        margin-right: 0px !important;
     }
-
 }

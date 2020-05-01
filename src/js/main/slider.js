@@ -20,24 +20,42 @@ $(document).ready(function () {
 	})
 
 
+	let windowWidth = $(window).width();
 
-	// $('.agency__slider .owl-carousel').owlCarousel({
-	// 	loop: true,
-	// 	margin: 0,
-	// 	nav: true,
-	// 	dots: true,
-	// 	responsive: {
-	// 		0: {
-	// 			items: 1
-	// 		},
-	// 		600: {
-	// 			items: 1
-	// 		},
-	// 		1000: {
-	// 			items: 1
-	// 		}
-	// 	}
-	// })
+	console.log(windowWidth)
+
+	if (windowWidth < 575) {
+		$('.jsSlider').addClass('mysliderOwl');
+
+		$('.mySlider').hide();
+	}else{
+		$('.jsSlider').remove();
+
+		$('.mySlider').show();
+	}
+
+
+	// add class
+
+
+	$('.mysliderOwl').owlCarousel({
+		loop: true,
+		margin: 0,
+		nav: false,
+		dots: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 1
+			},
+			1000: {
+				items: 1
+			}
+		}
+	})
+
 
 
 
@@ -162,7 +180,7 @@ $(document).ready(function () {
 		$('.mySlider .owl-dots').append('<button></button>')
 	}
 
-	
+
 
 	let index = 0;
 
@@ -308,10 +326,7 @@ $(document).ready(function () {
 
 
 	})
-
-
 	//create Slider Btn
-
 
 
 
@@ -319,23 +334,6 @@ $(document).ready(function () {
 
 //	SLIDER END
 
-
-// let myClosebtn = document.createElement('button');
-
-// myClosebtn.setAttribute('class', 'closeFlag');
-
-// myClosebtn.textContent = 'x'
-
-// $('.iti__country-list').append(myClosebtn);
-
-
-// console.log($('.form'));
-
-// $(document).scroll(function () {
-
-// 	$('.form').css('background-position', '0px ' + $(document).scrollTop() + 'px');
-
-// });
 
 
 
