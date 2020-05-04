@@ -83,8 +83,8 @@ $(document).ready(function () {
 
 
 	function counter(event) {
-		var element = event.target;         // DOM element, in this example .owl-carousel
-		var items = event.item.count;     // Number of items
+		var element = event.target;  
+		var items = event.item.count;  // Number of items
 
 
 		$('.Services__Count').text("1/" + items);

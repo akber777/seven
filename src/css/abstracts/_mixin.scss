@@ -89,6 +89,11 @@
 		@media (max-width: 1450px) {@content};
 	}
 
+
+	@if $breakpoint == l1538 {
+		@media (max-width: 1538px) {@content};
+	}
+
 	@if $breakpoint == l1690 {
 		@media (max-width: 1690px) {@content};
 	}

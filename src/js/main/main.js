@@ -139,6 +139,13 @@ $(document).ready(function () {
 
 
 
+
+
+		
+
+
+
+
 })
 
 
@@ -153,3 +160,7 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("mySidenav").style.transform = "translateX(150%)";
 }
+
+
+
+

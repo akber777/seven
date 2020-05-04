@@ -82,6 +82,12 @@
 			width: 180px;
 		}
 
+
+		@include respondmax(xl1300)
+		{
+			width:195px;
+		}
+
 		button {
 			position: relative;
 			float: left;
@@ -94,7 +100,13 @@
 			font-size: 20px;
 			padding: 0px 0px;
 			transition: all 0.3s;
-
+			
+			@include respondmax(xl1300)
+			{
+				font-size: 13px;
+				padding: 9px 23px!important;
+				padding-left: 43px !important;
+			}
 
 			@include respondmax(xl) {
 				font-size: 12px;
