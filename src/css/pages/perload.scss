@@ -1,170 +1,7 @@
-
-
-/*fonts*/
-
-@font-face {
-    font-family: 'Museo Sans 500';
-    src: url('fonts/MuseoSans500.eot');
-    src: url('fonts/MuseoSans500.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans500.woff2') format('woff2'),
-    url('fonts/MuseoSans500.woff') format('woff'),
-    url('fonts/MuseoSans500.ttf') format('truetype'),
-    url('fonts/MuseoSans500.svg#MuseoSans500') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans 500';
-    src: url('fonts/MuseoSans-500.eot');
-    src: url('fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-500.woff2') format('woff2'),
-    url('fonts/MuseoSans-500.woff') format('woff'),
-    url('fonts/MuseoSans-500.ttf') format('truetype'),
-    url('fonts/MuseoSans-500.svg#MuseoSans-500') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans 500';
-    src: url('fonts/MuseoSans-500Italic.eot');
-    src: url('fonts/MuseoSans-500Italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-500Italic.woff2') format('woff2'),
-    url('fonts/MuseoSans-500Italic.woff') format('woff'),
-    url('fonts/MuseoSans-500Italic.ttf') format('truetype'),
-    url('fonts/MuseoSans-500Italic.svg#MuseoSans-500Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Museo Sans 300';
-    src: url('fonts/MuseoSans-300.eot');
-    src: url('fonts/MuseoSans-300.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-300.woff2') format('woff2'),
-    url('fonts/MuseoSans-300.woff') format('woff'),
-    url('fonts/MuseoSans-300.ttf') format('truetype'),
-    url('fonts/MuseoSans-300.svg#MuseoSans-300') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans 700';
-    src: url('fonts/MuseoSans-700Italic.eot');
-    src: url('fonts/MuseoSans-700Italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-700Italic.woff2') format('woff2'),
-    url('fonts/MuseoSans-700Italic.woff') format('woff'),
-    url('fonts/MuseoSans-700Italic.ttf') format('truetype'),
-    url('fonts/MuseoSans-700Italic.svg#MuseoSans-700Italic') format('svg');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Museo Sans 900';
-    src: url('fonts/MuseoSans-900.eot');
-    src: url('fonts/MuseoSans-900.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-900.woff2') format('woff2'),
-    url('fonts/MuseoSans-900.woff') format('woff'),
-    url('fonts/MuseoSans-900.ttf') format('truetype'),
-    url('fonts/MuseoSans-900.svg#MuseoSans-900') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans 700';
-    src: url('fonts/MuseoSans-700.eot');
-    src: url('fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-700.woff2') format('woff2'),
-    url('fonts/MuseoSans-700.woff') format('woff'),
-    url('fonts/MuseoSans-700.ttf') format('truetype'),
-    url('fonts/MuseoSans-700.svg#MuseoSans-700') format('svg');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans 900';
-    src: url('fonts/MuseoSans-900Italic.eot');
-    src: url('fonts/MuseoSans-900Italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-900Italic.woff2') format('woff2'),
-    url('fonts/MuseoSans-900Italic.woff') format('woff'),
-    url('fonts/MuseoSans-900Italic.ttf') format('truetype'),
-    url('fonts/MuseoSans-900Italic.svg#MuseoSans-900Italic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Museo Sans 100';
-    src: url('fonts/MuseoSans-100.eot');
-    src: url('fonts/MuseoSans-100.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-100.woff2') format('woff2'),
-    url('fonts/MuseoSans-100.woff') format('woff'),
-    url('fonts/MuseoSans-100.ttf') format('truetype'),
-    url('fonts/MuseoSans-100.svg#MuseoSans-100') format('svg');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans 300';
-    src: url('fonts/MuseoSans-300Italic.eot');
-    src: url('fonts/MuseoSans-300Italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-300Italic.woff2') format('woff2'),
-    url('fonts/MuseoSans-300Italic.woff') format('woff'),
-    url('fonts/MuseoSans-300Italic.ttf') format('truetype'),
-    url('fonts/MuseoSans-300Italic.svg#MuseoSans-300Italic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Museo Sans 100';
-    src: url('fonts/MuseoSans-100Italic.eot');
-    src: url('fonts/MuseoSans-100Italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/MuseoSans-100Italic.woff2') format('woff2'),
-    url('fonts/MuseoSans-100Italic.woff') format('woff'),
-    url('fonts/MuseoSans-100Italic.ttf') format('truetype'),
-    url('fonts/MuseoSans-100Italic.svg#MuseoSans-100Italic') format('svg');
-    font-weight: 200;
-    font-style: italic;
-}
-
-
-
+#demo{
 
 /*fonts end*/
 
-
-/*bandshift*/
-
-
-@font-face {
-    font-family: 'Bahnschrift';
-    src: url('fonts/Bahnschrift.eot');
-    src: url('fonts/Bahnschrift.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Bahnschrift.woff2') format('woff2'),
-    url('fonts/Bahnschrift.woff') format('woff'),
-    url('fonts/Bahnschrift.ttf') format('truetype'),
-    url('fonts/Bahnschrift.svg#Bahnschrift') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
-/*fonts end*/
-
-
-body{
-    font-family: 'Museo Sans 100' !important;
-    overflow-x:hidden;
-}
 
 
 .full{
@@ -819,6 +656,7 @@ body{
                     padding: 15px 20px;
                     margin-top: 24px;
                     text-transform: capitalize;
+                    outline: 0 !important;
                 }
 
 
@@ -913,6 +751,7 @@ body{
                 border: none;
                 width: 100%;
                 height: 100%;
+                outline: 0em;
             }
 
             .seven_lang2 img{
@@ -1232,3 +1071,7 @@ body{
 
 
 
+
+
+
+}

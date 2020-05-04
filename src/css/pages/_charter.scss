@@ -88,10 +88,10 @@
 				width: calc((100% / 2) - 27px);
 			}
 
-			@include respondmax(sm450) {
-				width: 100%;
-				margin-left: 0;
-			}
+			// @include respondmax(sm450) {
+			// 	width: 100%;
+			// 	margin-left: 0;
+			// }
 		}
 
 		@include respondmax(xl) {
