@@ -19,7 +19,7 @@ var path = {
         html: 'build/',
         js: 'build/js/',
         vendor: 'build/js/vendor/', //src deki vendor klasörünü buildeki vendor klasörüne eklemek için
-        css: 'build/css/main/',
+        css: '../../../backend/S/seven/themes/seven/assets/css/main/',
         images: 'build/img/',
         fonts: 'build/fonts/',
         libs: 'build/libs/' //bower ile src klasörüne yüklediğim dosyaları build klasörüne eklemek için
