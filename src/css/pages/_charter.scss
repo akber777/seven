@@ -1,6 +1,6 @@
 .charter {
 	&__PAD {
-		padding: 0 40px;
+		padding: 0 20px;
 
 		@include respondmax(l1690) {
 			padding: 0 15px;
@@ -13,6 +13,7 @@
 		padding: 30px;
 		background-color: #fff;
 		transition: all 0.3s;
+		margin-bottom: 30px;
 
 		@include respondmax(xl) {
 			height: unset;

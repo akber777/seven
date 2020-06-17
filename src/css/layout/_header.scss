@@ -4,8 +4,23 @@
 	display: flex;
 	align-items: center;
 
+	
+	@include respondmax(lg)
+	{
+		@include rotate()
+		{
+			height: 75px;
+		}
+	}
+
 	@include respondmax(sm) {
 		height: 95px;
+
+
+		@include rotate()
+		{
+			height: 65px;
+		}
 	}
 
 	&__logo {
@@ -30,10 +45,21 @@
 			top: 0;
 			left: 0;
 			transform: unset;
+
+			@include rotate()
+			{
+				width: 75px;
+			}
 		}
 
 		@include respondmax(sm) {
 			width: 90px;
+
+
+			@include rotate()
+			{
+				width: 55px;
+			}
 		}
 
 		img {
@@ -127,6 +153,7 @@
 					color: #fff;
 					font-size: 18px;
 					transition: all 0.3s;
+					cursor: pointer;
 
 					@include respondmax(xl1261) {
 						font-size: 16px;

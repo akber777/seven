@@ -1,10 +1,5 @@
 .agency {
 	height: 750px;
-
-	@include respondmax(xl1328) {
-		height: 530px;
-	}
-
 	@include respondmax(md) {
 		height: 330px;
 	}

@@ -8,6 +8,7 @@
 		padding: 100px;
 		transition: all 0.3s;
 		min-height: 1000px;
+		padding: 37px 100px;
 
 		@include respondmax(xl1328) {
 			margin-top: -492px;
@@ -20,11 +21,6 @@
 
 		@include respondmax(sm) {
 			margin-top: -192px;
-		}
-
-		&:hover img {
-			transition: all 0.3s;
-			transform: scale(1.1);
 		}
 	}
 
@@ -77,6 +73,7 @@
 	&__imageBox {
 		overflow: hidden;
 		transition: all 0.3s;
+		margin-bottom: 15px;
 
 		@include respondmax(md) {
 			height: auto;
@@ -93,6 +90,11 @@
 
 	&__text {
 		transition: all 0.3s;
+
+
+		img{
+			margin-bottom: 15px;
+		}
 
 		p {
 			position: relative;

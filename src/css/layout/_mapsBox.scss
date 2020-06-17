@@ -139,6 +139,7 @@
 			border: none;
 			outline: 0 !important;
 			border-radius: 0;
+			font-size: 14px;
 
 			&:focus ~ .mysvg {
 				stroke: #b11116 !important;
@@ -155,6 +156,8 @@
 			outline: 0 !important;
 			border-radius: 0;
 			border: none;
+			font-size: 14px;
+			
 
 			&:focus ~ .mysvg {
 				stroke: #b11116 !important;

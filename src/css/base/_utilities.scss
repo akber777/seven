@@ -57,6 +57,29 @@
     }
 }
 
+.blog__text img {
+    position: relative !important;
+    float: left !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    object-fit: cover !important;
+
+    @include respondmax(md) {
+        height: 209px !important;
+    }
+}
+
+.blog__text iframe {
+    position: relative !important;
+    float: left !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+
+    @include respondmax(md) {
+        height: 209px !important;
+    }
+}
+
 .myForms .nice-select:after {
     height: 13px;
     right: 20px;
@@ -306,6 +329,12 @@
 .myForms .row {
     position: relative;
     float: left;
+    width: unset;
+    padding-bottom: 25px;
+}
+
+.sidenav .header__nav--ul > li {
+    margin-bottom: 19px !important;
 }
 
 .loadingGif {
@@ -337,7 +366,6 @@
     border-radius: 50%;
 }
 @for $i from 1 through 16 {
-    /* this was a fail. i'm not sure how to get the nested children. o_O */
     .loading span:nth-child(#{$i}) {
         -webkit-animation: spin #{1 + ($i * 0.89)}s infinite linear;
     }
@@ -451,6 +479,7 @@ header {
     font-size: 36px;
     margin-left: 50px;
     color: #fff;
+    z-index: 555;
 }
 
 @media screen and (max-height: 450px) {
@@ -470,6 +499,10 @@ header {
     .header__nav {
         display: flex;
         flex-direction: column;
+
+        @include rotate() {
+            margin-top: 60px;
+        }
     }
 
     .header__nav--ulRight {
@@ -532,4 +565,538 @@ header {
     @include respondmax(md) {
         margin-right: 0px !important;
     }
+}
+
+#demo .left_absolute h4 {
+    a {
+        color: #fff !important;
+    }
+
+    &:hover {
+        color: #fff !important;
+        border-top-color: #fff !important;
+        border-bottom-color: #fff !important;
+    }
+
+    &:before {
+        background-color: #fff !important;
+    }
+
+    &:after {
+        background-color: #fff !important;
+    }
+}
+
+#demo {
+    .seven_lang2 button {
+        display: none;
+    }
+
+    .right_absolute {
+        display: none !important;
+    }
+
+    .left_absolute {
+        left: 50% !important;
+        -webkit-transform: translateX(-50%) !important;
+        -moz-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        -o-transform: translateX(-50%) !important;
+        transform: translateX(-50%) !important;
+
+
+        h4{
+            margin-left:0 !important;
+        }
+    }
+}
+
+// fightt
+
+#demo .right_absolute h4 {
+    a {
+        color: #fff !important;
+    }
+
+    &:hover {
+        color: #fff !important;
+        border-top-color: #fff !important;
+        border-bottom-color: #fff !important;
+    }
+
+    &:before {
+        background-color: #fff !important;
+    }
+
+    &:after {
+        background-color: #fff !important;
+    }
+}
+
+// scrollbar start
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 0px;
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 1px;
+}
+
+// scrollbar end
+
+.myForms {
+    overflow-y: scroll;
+
+    @include respondmax(md) {
+        overflow-x: scroll;
+    }
+
+    .g-recaptcha div,
+    iframe {
+        width: 250px !important;
+    }
+
+    .boat__formsBtn {
+        font-size: 14px !important;
+        padding-left: 23px;
+
+        @include respondmax(md) {
+            font-size: 11px !important;
+        }
+
+        &:hover {
+            padding-left: 23px;
+        }
+
+        &:after {
+            left: -1px;
+            @include respondmax(md) {
+                width: 21px;
+            }
+        }
+    }
+}
+
+.has-error {
+    & > .form-field-error-label {
+        color: #b11116 !important;
+    }
+}
+
+.form-field-error-label {
+    color: #fff;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.agency__mouse {
+    display: none !important;
+}
+
+.marginbottoms {
+    margin-bottom: 50px;
+}
+
+.range form {
+    @extend .full;
+}
+
+.range__searchBtn {
+    bottom: -118px !important;
+
+    @include respondmax(xl1328) {
+        height: 47px !important;
+        bottom: -89px !important;
+    }
+}
+
+.mapsBox__form button {
+    &:hover {
+        padding-left: 15px;
+    }
+}
+
+.results__rightImg img {
+    height: 252px !important;
+    object-fit: cover !important;
+}
+
+.search__content {
+    min-height: auto !important;
+}
+
+.search__pagination .active {
+    background-color: #b11116 !important;
+    color: #fff !important;
+    font-size: 10px !important;
+}
+
+.search__pagination li {
+    padding: 11px !important;
+}
+
+.search__pagination li.disabled {
+    background-color: #d7d7d7 !important;
+    margin-right: 22px !important;
+    margin-left: 22px !important;
+}
+
+.fixedNoHEader {
+    z-index: 56 !important;
+}
+
+.services__abText {
+    width: 80% !important;
+
+    p {
+        font-size: 18px !important;
+    }
+}
+
+.Services .owl-next {
+    @media (max-width: 1698px) {
+        right: 55px !important;
+    }
+}
+
+.sidenav {
+    display: none;
+}
+
+.range {
+    @include respondmax(md) {
+        padding: 65px 23px !important;
+    }
+}
+
+.charter__box .form__button button {
+    font-size: 15px !important;
+
+    @include respondmax(lg) {
+        font-size: 11px !important;
+        padding-left: 0 !important;
+    }
+}
+
+.Services .owl-nav {
+    @include respondmax(lg) {
+        top: 37% !important;
+    }
+}
+
+.Services__textContainer--texts:after {
+    top: 28% !important;
+
+    @media (max-width: 1640px) {
+        top: 21% !important;
+    }
+}
+
+.Services__Count {
+    font-size: 18px !important;
+
+    @include respondmax(xl) {
+        color: #fff;
+    }
+}
+
+.Services .owl-prev {
+    @media (max-width: 1698px) {
+        right: 126px !important;
+    }
+}
+
+.Services__textboxes {
+    @media (max-width: 1698px) {
+        padding: 0 111px !important;
+    }
+
+    @include respondmax(xl) {
+        padding: 0 !important;
+    }
+}
+
+.Services__textContainer {
+    @media (max-width: 1200px) {
+        padding: 20px 111px !important;
+    }
+
+    @include respondmax(md) {
+        padding: 20px 50px !important;
+    }
+}
+
+.services__abText p {
+    height: auto !important;
+    max-height: unset !important;
+    overflow: unset !important;
+}
+
+@media (max-width: 1328px) {
+    .services__boxes {
+        height: 430px !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .services__boxes {
+        height: 411px !important;
+    }
+}
+
+.services__boxes--title {
+    height: 75px !important;
+
+    @include respondmax(md) {
+        height: unset !important;
+    }
+}
+
+.services__boxes--text {
+    height: auto !important;
+    max-height: unset !important;
+    overflow: unset !important;
+}
+
+.services__boxes--title h5 {
+    height: 100% !important;
+    max-height: unset !important;
+
+    @include respondmax(l1450) {
+        font-size: 20px !important;
+    }
+}
+
+.search__content {
+    padding-top: 66px !important;
+    padding-bottom: 66px !important;
+}
+
+.services__content {
+    padding-top: 66px !important;
+    padding-bottom: 66px !important;
+}
+
+.nice-select .option {
+    font-size: 16px !important;
+
+    @include respondmax(l1450) {
+        font-size: 15px !important;
+    }
+
+    @media (max-width: 1290px) {
+        font-size: 11px !important;
+    }
+
+    @media (max-width: 1179px) {
+        font-size: 15px !important;
+    }
+
+    @include respondmax(md) {
+        font-size: 16px !important;
+    }
+}
+
+.results__rightImg {
+    padding: 0 !important;
+    width: calc(50% - 11px) !important;
+
+    @include respondmax(lg) {
+        margin-left: 13px;
+        width: calc(50% - 23px) !important;
+    }
+
+    @include respondmax(sm) {
+        margin-left: 0;
+        margin-bottom: 5px;
+        width: 100% !important;
+    }
+}
+
+.results__rightImg {
+    margin-right: 6px;
+}
+
+.results__contents {
+    padding: 0 !important;
+    margin-left: 14px;
+    width: calc(100% - 16px);
+
+    @include respondmax(lg) {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.charter__box--title h4 {
+    margin-top: 18px !important;
+}
+
+.results__boxes {
+    padding: 0 100px;
+
+    @media (max-height: 1520px) {
+        padding: 0 80px;
+    }
+
+    @media (max-width: 1328px) {
+        padding: 0 28px;
+    }
+}
+
+.range__selectEnd .nice-select .list {
+    @media (max-width: 1960px) {
+        width: 129% !important;
+    }
+
+    @media (max-width: 1500px) {
+        width: 159% !important;
+        left: -76px;
+    }
+
+    @media (max-width: 1280px) {
+        width: 100% !important;
+        font-size: 13px !important;
+        left: 0 !important;
+    }
+}
+
+.range__selectEnd .nice-select span {
+    overflow: hidden !important;
+
+    @include respondmax(md) {
+        font-size: 16px !important;
+    }
+}
+
+#demo .allDisplayCharter h4 {
+    a {
+        color: #fff;
+    }
+}
+
+.rightAfter:after {
+    position: absolute;
+    width: 2px;
+    content: "";
+    right: -1px;
+    height: 100%;
+    background-color: #fff;
+    top: 29%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.irs--flat .irs-handle {
+    width: auto !important;
+}
+
+.blogItem {
+    @include respondmax(xl1328) {
+        margin-top: -648px !important;
+    }
+
+    @include respondmax(md) {
+        margin-top: -248px !important;
+        margin-bottom: 35px !important;
+    }
+
+    @include respondmax(sm) {
+        margin-top: -156px !important;
+        padding: 20px 18px !important;
+        padding-top: 10px !important;
+    }
+}
+
+.myForms .boat__formsBtn {
+    border: 1px solid #fff !important;
+}
+
+.myForms .boat__formsBtn:after {
+    left: 0 !important;
+    width: 28px !important;
+}
+
+.agnecyBttn {
+    border: 1px solid #fff !important;
+}
+
+.range__selectEnd {
+    @include respondmax(md) {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+    }
+}
+
+.searchBtnDiv {
+    margin-top: 20px;
+}
+
+.searchINputs {
+    font-size: 14px !important;
+    padding-left: 20px !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+    position: absolute !important;
+    border: 1px solid #fff !important;
+
+    &:hover {
+        padding-left: 20px !important;
+    }
+}
+
+.mySearch__form #inputPassword5::-webkit-input-placeholder {
+    line-height: normal !important;
+}
+
+.mySearch__form #inputPassword5 {
+    line-height: 1px !important;
+}
+
+#mySidenav .header__nav--ul {
+    height: auto !important;
+}
+
+#mySidenav .header__nav {
+    align-items: flex-start !important;
+}
+
+#mySidenav .header__nav {
+    justify-content: unset !important;
+}
+
+.sidenav .header__nav--ulRight {
+    position: absolute !important;
+    bottom: 0 !important;
+}
+
+#mySidenav .header__lang {
+    margin-left: 25px !important;
+}
+
+#mySidenav .header__lang li a {
+    font-size: 18px;
+    color: #fff;
+}
+
+#mySidenav .header__lang ul li:first-child:after {
+    right: 40px;
 }

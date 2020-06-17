@@ -1,16 +1,16 @@
 .results {
-	margin-top: -408px;
+	// margin-top: -408px;
 	background: #fff;
 	z-index: 54;
 	padding-top: 25px;
 
-	@include respondmax(xl1328) {
-		margin-top: -191px;
-	}
+	// @include respondmax(xl1328) {
+	// 	margin-top: -191px;
+	// }
 
-	@include respondmax(lg) {
-		margin-top: 0;
-	}
+	// @include respondmax(lg) {
+	// 	margin-top: 0;
+	// }
 
 	&__container {
 		height: 500px;
@@ -34,6 +34,7 @@
 	&__contents {
 		height: 100%;
 		overflow: hidden;
+		padding-left: 17px;
 	}
 
 	&__btn {
@@ -90,7 +91,7 @@
 			float: left;
 
 			@include respondmax(sm) {
-				font-size: 14px;
+				font-size: 11px;
 			}
 		}
 
@@ -131,6 +132,12 @@
 			padding: 0 15px;
 		}
 
+		@include respondmax(sm)
+		{
+			height: unset;
+			padding: 13px 0;
+		}
+
 		h4 {
 			position: relative;
 			float: left;
@@ -154,6 +161,7 @@
 
 	&__boxes {
 		margin-bottom: 54px;
+		background-color: #fff;
 
 		&--top {
 		}
@@ -165,6 +173,10 @@
 		width: 50%;
 		padding: 0 4px;
 		overflow: hidden;
+
+		@include respondmax(sm) {
+			display: none;
+		}
 
 		&:hover img {
 			transition: all 0.3s;
@@ -226,5 +238,17 @@
 
 	@include respondmax(sm) {
 		margin-top: -164px;
+	}
+}
+
+.myResultsss {
+	z-index: 555;
+	margin-top: -439px;
+	@include respondmax(xl1328) {
+		margin-top: 0px;
+	}
+
+	@include respondmax(lg) {
+		margin-top: 0;
 	}
 }

@@ -127,14 +127,61 @@ main {
 }
 
 .whatsap_div {
-	position: fixed !important;
-	bottom: 67px;
-	right: 54px;
-	width: 80px;
-	height: 80px;
-	cursor: pointer;
-	z-index: 100;
+	position: fixed!important;
+	bottom: 13px;
+	right: 27px;
+	width: 55px;
+    /* height: 61px; */
+    cursor: pointer;
+    z-index: 100;
+    padding: 11px;
+    border-radius: 100%;
+    background-color:#2cb742;
+    transition: all .3s ease;
+    animation: pulse 1.6s infinite;
 }
+
+
+
+@-webkit-keyframes pulse {
+
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(44,183,66, .85);
+		box-shadow: 0 0 0 0 rgba(44,183,66, .85);
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 2em rgba(44,183,66, 0);
+		box-shadow: 0 0 0 2em rgba(44,183,66, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(44,183,66, 0);
+		box-shadow: 0 0 0 0 rgba(44,183,66, 0);
+	}
+
+}
+
+@keyframes pulse {
+
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(44,183,66, .85);
+		box-shadow: 0 0 0 0 rgba(44,183,66, .85);
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 2em rgba(44,183,66, 0);
+		box-shadow: 0 0 0 2em rgba(44,183,66, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(44,183,66, 0);
+		box-shadow: 0 0 0 0 rgba(44,183,66, 0);
+	}
+
+}
+
+
 
 .whatsap_div img {
 	animation-name: callanimation;
@@ -145,17 +192,18 @@ main {
 	animation-iteration-count: infinite;
 	animation-fill-mode: none;
 	animation-play-state: running;
+
 }
 
-@keyframes callanimation {
-	from {
-		transform: scale(0.8);
-	}
+// @keyframes callanimation {
+// 	from {
+// 		transform: scale(0.8);
+// 	}
 
-	to {
-		transform: scale(1);
-	}
-}
+// 	to {
+// 		transform: scale(1);
+// 	}
+// }
 
 .blogImg {
 	height: 100%;

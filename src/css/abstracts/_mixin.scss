@@ -105,7 +105,13 @@
 }
 
 
+@mixin rotate(){
 
+	@media screen and (orientation: landscape) {
+		@content
+	}
+
+}
 
 @mixin font($ff: false, $s: false, $c: false,  $lh: false, $w: false) {
 

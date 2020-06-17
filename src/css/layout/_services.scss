@@ -50,7 +50,7 @@
 		width: 50px !important;
 		height: 50px !important;
 		background: #b11116 !important;
-		right: 90px !important;
+		right: 90px;
 		outline: 0 !important;
 		background-image: url(../../img/prev.png) !important;
 		background-position: center !important;
@@ -74,7 +74,7 @@
 		width: 50px !important;
 		height: 50px !important;
 		background: #b11116 !important;
-		right: 18px !important;
+		right: 18px;
 		outline: 0 !important;
 		background-image: url(../../img/next.png) !important;
 		background-position: center !important;
@@ -100,7 +100,7 @@
 	}
 
 	&__imageBox {
-		height: 679px;
+		height: 463px;
 
 		@include respondmax(lg) {
 			height: 384px;
@@ -111,6 +111,7 @@
 			float: left;
 			width: 100%;
 			height: 100%;
+			object-fit: cover;
 
 			@include respondmax(xl) {
 				object-fit: cover;
@@ -147,7 +148,7 @@
 		position: relative;
 		float: left;
 		width: 609px;
-		height: 609px;
+		height: 371px;
 		top: 50%;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
@@ -208,6 +209,12 @@
 				font-size: 25px;
 				color: #b11116;
 				margin-bottom: 11px;
+
+
+				@include respondmax(l1450)
+				{
+					font-size: 20px;
+				}
 
 				@include respondmax(sm) {
 					font-size: 18px;

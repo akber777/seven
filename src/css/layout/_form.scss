@@ -5,7 +5,9 @@
 	background-position: center;
 	background-attachment: fixed;
 
-
+	@include respondmax(l1450) {
+		height: 269px;
+	}
 
 	@include respondmax(lg)
 	{
@@ -62,6 +64,11 @@
 			color: #fff;
 			text-align: center;
 			line-height: 78px;
+
+			@include respondmax(l1450) {
+				font-size: 30px;
+				line-height: 50px;
+			}
 
 			@include respondmax(xl1328) {
 				font-size: 30px;

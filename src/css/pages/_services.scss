@@ -16,6 +16,14 @@
 			color: #000;
 			text-align: center;
 			margin-bottom: 0;
+
+			@include respondmax(md)
+			{
+				font-size: 28px;
+				// margin-bottom: 23px;
+				// padding: 7px 0;
+
+			}
 		}
 
 		span {
@@ -116,18 +124,21 @@
 		}
 
 		@include respondmax(xl1328) {
-			margin-top: -448px;
+			margin-top: -648px;
 			padding: 20px 52px;
 		}
 
 		@include respondmax(md) {
 			margin-top: -248px;
 			margin-bottom: 35px;
+			padding: 20px!important;
+			padding-top: 20px !important;
 		}
 
 		@include respondmax(sm) {
 			margin-top: -156px;
 			padding: 20px 18px;
+			padding-top: 10px !important;
 		}
 	}
 
@@ -149,6 +160,11 @@
 
 		@include respondmax(xl) {
 			height: unset;
+		}
+
+		@include respondmax(md)
+		{
+			box-shadow: none;
 		}
 
 		&:hover {
@@ -314,6 +330,12 @@
 
 		@include respondmax(xl1328) {
 			padding: 40px;
+		}
+
+		
+		@include respondmax(md)
+		{
+			padding-top: 20px;
 		}
 
 		@include respondmax(sm) {
